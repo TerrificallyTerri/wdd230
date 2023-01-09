@@ -11,8 +11,6 @@
     --heading-font: "Moon Dance", cursive;
     --paragraph-font: "Indie Flower", cursive;
 }
-
-
 body {
     max-width: 960px;
     padding: 0 4em;
