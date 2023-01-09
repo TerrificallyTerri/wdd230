@@ -4,7 +4,7 @@
 :root {
     --primary-color: #53353f;
     --accent-color: #76575C;
-    --text-color-on-color: #8B7D7D;
+    --text-color-on-color: #e7e5e5;
     --text-color-on-white: #794643;
     --background-color: #3A3740;
 
@@ -40,13 +40,14 @@ h1{
     margin:auto auto auto 5em;
     font-family: var(--heading-font);
     font-size: 2.5em;
-    color: #8B7D7D;
+    color: #e7e5e5;
 }
 h2 {
     font-family: var(--heading-font);
     color: var(--text-color-on-color);
     text-align: center;
     margin: -10px 0 20px;
+    font-size: 1.5em;
 }
 ul{
     background-color: var(--background-color);
@@ -72,13 +73,13 @@ ul{
     border-radius: 5px;
 }
 ::marker{
-    color: #8B7D7D;
+    color: var(--background-color);
     content: "→";
     font-size: 1.5em;
 }
 li{
     padding-left: 35px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 a{
     color: var(--text-color-on-color);
@@ -90,11 +91,12 @@ a:hover{
 footer {
     background-color: var(--primary-color);
     position: relative;
-    color: #8B7D7D;
+    color: var(--text-color-on-color);
     padding: 0.75em;
     border-radius: 5px;
     text-align: center;
     z-index: 10;
+    font-size: 0.75em;
 }
 footer a {
     color: #8B7D7D;
