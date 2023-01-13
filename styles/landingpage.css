@@ -99,8 +99,8 @@ footer {
     font-size: 0.75em;
 }
 footer a {
-    color: #8B7D7D;
-    text-decoration: underline #8B7D7D;
+    color: white;
+    text-decoration: underline white;
     transition: color 0.5s, text-shadow 0.5s;
 }
 footer a:hover {
