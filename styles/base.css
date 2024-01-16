@@ -86,10 +86,17 @@ li{
     margin-left: 10em;
     padding-bottom: 0.5em;
 }
-li:hover {
+li a{
+    margin-left: 1.5em;
+    color: var(--color1);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+li a:hover {
     color: var(--color3);
     text-decoration: underline;
-}
-.tb_button.hover {
-    border: 2px outset #def;
+    background: var(--color5);
+    
 }
