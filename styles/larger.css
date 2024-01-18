@@ -1,0 +1,14 @@
+@media screen and (min-width: 720px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    main {
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns: 2fr 1fr;
+    }
+    h2{
+        /* grid-area: 1 / 2 / 1 / 2; */
+        grid-column: span 2;
+    }
+}

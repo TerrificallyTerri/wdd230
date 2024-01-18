@@ -14,34 +14,34 @@
     --font3: "Quintessential", serif;
 }
 body{
-    max-width: 1200px;
     text-align: center;
     font-family: var(--font2);
     margin: auto;
     background-color: var(--color2);
 }
 main {
-    width: 95%;
+    /* width: 95%; */
     margin: auto;
     display: grid;
     grid-template-rows: auto;
 }
 header {
-    padding: 20px;
+    padding: 15px;
     background-color: var(--color5);
     color: var(--color3);
     font-family: var(--font1);
-    font-size: 2em;
+    font-size: 1.75em;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 header img {
     border-radius: 15%;
-    width: 4em;
+    width: 3em;
     object-fit: cover;
 }
 h1 {
-    padding-left: 10%;
+    padding-left: 5%;
 }
 nav {
     background-color: var(--color1);
@@ -60,15 +60,15 @@ nav a:hover {
 }
 h2 {
     font-family: var(--font3);
-    font-size: 2em;
+    font-size: 1.75em;
+    line-height: 1.5em;
     text-decoration: underline 8px var(--color1); 
-    text-underline-offset: 15px ;
+    text-underline-offset: 12px ;
     color: var(--color5);
 }
 .card {
     background-color: var(--color4);
-    place-self: center stretch;
-    margin: 5px;
+    margin: 10px;
     border: 15px solid var(--color1);
     color: var(--color1);
 }
@@ -83,7 +83,7 @@ ul {
 }
 li{
     text-align: left;
-    margin-left: 10em;
+    /* margin-left: 20%; */
     padding-bottom: 0.5em;
 }
 li a{
@@ -98,4 +98,7 @@ li a:hover {
     color: var(--color3);
     text-decoration: underline;
     background: var(--color5);
+}
+footer{
+    font-size: 0.75em;
 }
