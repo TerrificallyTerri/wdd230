@@ -1,0 +1,13 @@
+/* for larger screens */
+@media screen and (min-width: 900px) {
+
+    header{
+        padding: 0.2em;
+        font-size: 1.5em;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
