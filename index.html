@@ -39,9 +39,10 @@
       <img src="images/photo-150px.jpg" alt="Bespectacled female" />
       <h1>Terri de Breyn</h1>
     </header>
-    <nav>
+    <button id="menu"></button>
+    <nav class="navigation">
       <a href="#">Home</a>
-      <a href="lesson3/chamber-site-plan.html">Site Plan</a>
+      <a href="lesson03/chamber-site-plan.html">Site Plan</a>
       <a href="./chamber/index.html">Chamber</a>
       <a href="https://www.byui.edu/" target="blank">BYU-Idaho</a>
       <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5.26#p26" target="blank">Scripture</a>
@@ -81,6 +82,12 @@
         <p>Weather: <span id="weather">placeholder</span></p>
         <p>Visitors to Site: <span id="visits">placeholder</span></p>
       </section>
+      <section class="card" id="map">
+        <h3>Map</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57485.01725108711!2d29.466682333498994!3d-25.77672041755297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695999569410!5m2!1sen!2sza"
+          allowfullscreen="" loading="lazy" title="Google Map of General Location"></iframe>
+      </section>
     </main>
     <footer>
       <p>
@@ -89,6 +96,7 @@
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
   </body>
 
 </html>

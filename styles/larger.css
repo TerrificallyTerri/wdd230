@@ -1,7 +1,14 @@
 @media screen and (min-width: 720px) {
-    nav {
+    .navigation {
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        background-color: var(--color1);
+        /* flex-direction: column; */
+    }
+    #menu {
+        /* hide hamburger when not in use */
+        display: none; 
     }
     main {
         grid-template-rows: max-content max-content max-content;
@@ -9,5 +16,8 @@
     }
     h2{
         grid-column: span 2;
+    }
+    #map {
+        grid-column: 1 / span 2;
     }
 }

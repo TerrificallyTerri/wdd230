@@ -41,21 +41,46 @@ header img {
 h1 {
     padding-left: 5%;
 }
-nav {
+/* Hamburger Menu Stuff */
+#menu {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background: var(--color1);
+    color: var(--color5);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "🔙";
+}
+
+.navigation {
+    display: none;
+}
+.navigation.open {
     background-color: var(--color1);
     display: flex;
     flex-direction: column;
 }
-nav a {
+
+.navigation a {
     text-decoration: none;
     font-weight: bold;
     color: var(--color5);
     padding: 0.4em;
 }
-nav a:hover {
+
+.navigation a:hover {
     color: var(--color1);
     background-color: var(--color5);
 }
+
 h2 {
     font-family: var(--font3);
     font-size: 1.75em;
@@ -97,6 +122,14 @@ li a:hover {
     text-decoration: underline;
     background: var(--color5);
 }
+
+iframe {
+    height: 40vh;
+    width: 90vw;
+    object-fit: cover;
+    margin:0 0.5em 2em 0.5em;
+}
+
 footer{
     font-size: 0.75em;
 }
