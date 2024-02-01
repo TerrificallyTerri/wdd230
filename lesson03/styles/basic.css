@@ -60,7 +60,10 @@
     #logo {
         width: 400px;
         object-fit: cover;
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
     }
+
     #wireframe {
         max-width: 90%;
     }
