@@ -41,7 +41,7 @@
         color: var(--headline-color-on-color);
     }
     h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     hr {
@@ -60,11 +60,9 @@
     #logo {
         width: 400px;
         object-fit: cover;
-        filter: invert(100%);
-        -webkit-filter: invert(100%);
     }
 
-    #wireframe {
+    .wireframe {
         max-width: 90%;
     }
     .colors {
