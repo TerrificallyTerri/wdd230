@@ -1,0 +1,33 @@
+
+
+
+
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideimage {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideimage:first-child {
+    opacity: 1;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
