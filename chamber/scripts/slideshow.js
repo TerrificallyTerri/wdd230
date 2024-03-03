@@ -1,20 +1,14 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.slideimage');
+let slideIndex = 0;
+showSlides();
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.opacity = (i === index) ? '1' : '0';
-        });
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-
-    function nextSlide() {
-        showSlide(currentIndex);
-        currentIndex = (currentIndex + 1) % slides.length;
-    }
-
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
-
-    // Initially show the first slide
-    showSlide(currentIndex);
-});
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 1000); // Change image every 2 seconds
+}

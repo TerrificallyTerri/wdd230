@@ -1,0 +1,46 @@
+/* Css for Chamber Homepage Build → Medium */
+@media screen and (min-width: 991px) {
+    body {
+        background-color:blue;
+    }
+    
+    header {
+        flex-direction: row;
+
+    }
+
+    header img {
+        width: 10vw;
+        margin: 0.4em;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: var(--secondary-color);
+        align-items: center;
+    }
+
+    #menu {
+        /* hide hamburger when not in use */
+        display: none;
+    }
+
+    .spacer {
+        display: none;
+    }
+    .slideshow-container {
+        width: 990px;
+        height: 275px;
+        margin: 0 auto;
+    }
+    .mySlides img {
+        width:990px;
+        height: 475px;
+    }
+    .text a {
+        font-size: 2em;
+    }
+
+}

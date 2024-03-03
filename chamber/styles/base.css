@@ -1,33 +1,170 @@
+/* base css for chamber homepage build */
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #002659;
+    --secondary-color: #d0af4f;
+    --accent1-color: #e9d8b0;
+    --accent2-color: #0086e5;
 
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Fjalla One", Arial, Helvetica, sans-serif;
+    --paragraph-font: "Libre Baskerville", "Times New Roman", Times, serif;
 
-
-
-.slideshow {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #002659;
+    /* headlines on a white background */
+    --headline-color-on-color: white;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #002659;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #e9d8b0;
+    --nav-link-color: #396E94;
+    --nav-background-color: #002659;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #e9d8b0;
 }
 
-.slideimage {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+body {
+    margin: auto;
+    text-align: center;
 }
 
-.slideimage:first-child {
-    opacity: 1;
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    font-family: var(--heading-font);
+    white-space: nowrap;
 }
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
+
+header img {
+    display: block;
+    margin: auto;
+    padding-bottom: 1vh;
+    filter: invert(1);
+    width: 20vw;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+/* Dropdown */
+#menu {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background: var(--accent1-color);
+    color: var(--headline-color-on-white);
     position: absolute;
-    top: 50%;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+    background-color: var(--paragraph-color-on-white);
+    color: var(--accent1-color);
+    z-index: 4;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--paragraph-background-color);
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navigation a {
+    color: var(--nav-link-color);
+    font-size: 1.5em;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: var(--nav-link-color);
+    color: var(--accent1-color);
+    cursor: grab;
+    border-radius: 10px;
+}
+
+.spacer {
+    max-width: 100vw;
+    height: 1vw;
+    background-color: var(--secondary-color);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 98vw;
+    height: 25vw;
+    /* aspect-ratio: 16/13; */
+    position: relative;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    object-fit:contain;
+    position:relative;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 45vw;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+/* Caption text */
+.text {
+    background-color:var(--nav-background-color);
+    padding: 8px 12px;
+    position: absolute;
+    top: 1.5vw;
+    left: 1vw;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+
+    /* Prevent text from wrapping */
+}
+.text a {
+    font-size: 4vw;
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-shadow: 1px 0.5px #242222;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 2vw;
 }

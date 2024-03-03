@@ -1,0 +1,30 @@
+/* Css for Chamber Homepage Build → Medium */
+@media screen and (min-width: 601px) and (max-width: 990px){
+    body {
+        background-color: black;
+    }
+    header {
+        flex-direction: row;
+        
+    }
+    header img {
+        width: 15vw;
+        margin: 0.4em;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: var(--secondary-color);
+        align-items: center;
+    }
+    #menu {
+        /* hide hamburger when not in use */
+        display: none;
+    }
+    .spacer {
+        display: none;
+    }
+  
+}

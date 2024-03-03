@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Middelburg Chamber of Commerce</title>
         <meta name="author" content="Terri de Breyn">
@@ -30,39 +30,69 @@
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville&display=swap"
             rel="stylesheet">
 
+        <!-- JS script links -->
+        <script defer src="scripts/slideshow.js"></script>
+        <script defer src="scripts/dropdown.js"></script>
+
 
     </head>
 
     <body>
-        <header>
-            <img src="images/chamber-first-logo-300.png" alt="Middelburg Chamber of Commerce 
+        <header class="asitellyou">
+            <img src="images/chamber-first-logo6.png" alt="Middelburg Chamber of Commerce 
                             Logo">
             <h1>Middelburg Chamber Of Commerce</h1>
         </header>
 
-        <nav>
+        <button id="menu"></button>
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
             <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
+            <a href="join.html">Join the Chamber</a>
         </nav>
 
         <main>
-            <section class="slideshow">
-                <div><img src="images/art.jpg" alt="Dr Ester Mahlangu Ndebele BMW" class="slideimage"></div>
-                <div><img src="images/agriculture.jpg" alt="Field of corn" class="slideimage"></div>
-                <div><img src="images/stainless-steel.jpeg" alt="rolls of freshly fabricated stainless steel"
-                        class="slideimage"></div>
-                <div><img src="images/powerstation.jpg" alt="Duva Coal Power Station" class="slideimage"></div>
-                <div><img src="images/mines.jpg" alt="workers infront of a coal processing plant" class="slideimage">
+            <div class="spacer"></div>
+            <!-- container -->
+            <div class="slideshow-container">
+                <!-- Images with captions -->
+                <div class="mySlides">
+                    <div class="numbertext">1/5</div>
+                    <img src="images/art1.jpg" alt="Dr Esther Mahlangu and Ndebele designed BMW">
+                    <div class="text"><a href="join.html">Join the Chamber</a></div>
                 </div>
-            </section>
+
+                <div class="mySlides">
+                    <div class="numbertext">2/5</div>
+                    <img src="images/agriculture2.jpg" alt="Rich farmlands around Middelburg">
+                    <div class="text"><a href="join.html">Join the Chamber</a></div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3/5</div>
+                    <img src="images/mines2.jpg" alt="Mining industry Mine workers on ore processing plant">
+                    <div class="text"><a href="join.html">Join the Chamber</a></div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4/5</div>
+                    <img src="images/stainless-steel2.jpg" alt="Stainless Steel production">
+                    <div class="text"><a href="join.html">Join the Chamber</a></div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5/5</div>
+                    <img src="images/powerstation.jpg" alt="Duvah Power Station with Bonsmara cattle in the foreground">
+                    <div class="text"><a href="join.html">Join the Chamber</a></div>
+                </div>
+
+            </div>
         </main>
         <footer>
 
         </footer>
-        <!-- JS script links -->
-        <script defer src="scripts/slideshow.js"></script>
+
     </body>
 
 
