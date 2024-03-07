@@ -55,6 +55,7 @@ header img {
 
 h1 {
     font-size: 6vw;
+    color: var(--headline-color-on-color);
 }
 h1,
 h2 {
