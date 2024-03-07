@@ -1,4 +1,4 @@
-// JavaScript
+// Hamburger button 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 

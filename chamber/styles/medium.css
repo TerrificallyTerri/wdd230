@@ -1,15 +1,22 @@
 /* Css for Chamber Homepage Build → Medium */
 @media screen and (min-width: 601px) and (max-width: 990px){
     body {
-        background-color: black;
+        /* background-color: black; */
+        color: aliceblue;
     }
     header {
         flex-direction: row;
-        
+        justify-content: center;
     }
     header img {
         width: 15vw;
-        margin: 0.4em;
+        margin: 0.4em 1em;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 3vw;
     }
     
     .navigation {

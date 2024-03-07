@@ -33,16 +33,19 @@
         <!-- JS script links -->
         <script defer src="scripts/slideshow.js"></script>
         <script defer src="scripts/dropdown.js"></script>
+        <script defer src="scripts/darkmode.js"></script>
 
 
     </head>
 
-    <body>
+    <body class="light-mode">
+
         <header>
             <img src="images/chamber-first-logo6.png" alt="Middelburg Chamber of Commerce 
                             Logo">
             <h1>Middelburg Chamber Of Commerce</h1>
         </header>
+
 
         <button id="menu">≡</button>
         <nav class="navigation">
@@ -52,9 +55,13 @@
             <a href="join.html">Join the Chamber</a>
         </nav>
 
+        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
+            <span class="icon">🌚 Dark</span>
+        </button>
+
         <main>
             <div class="spacer"></div>
-            <!-- container -->
+            <!-- Slideshow container -->
             <div class="slideshow-container">
                 <!-- Images with captions -->
                 <div class="mySlides">
@@ -86,11 +93,30 @@
                     <img src="images/powerstation.jpg" alt="Duvah Power Station with Bonsmara cattle in the foreground">
                     <div class="text"><a href="join.html">Join the Chamber</a></div>
                 </div>
-
+            </div>
+            <div class="events">
+                <h2>Events</h2>
+                <p>Use accordion here</p>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <p>Use verticle flip box</p>
+            </div>
+            <div class="cards">
+                <h2>Chamber Member Testimonials</h2>
+                <p>Use chat messages type</p>
             </div>
         </main>
         <footer>
-
+            <div class="socials"></div>
+            <ul>
+                <li><a href="#"></a>Social media tags</li>
+                <li><a href="#"></a>Social media tags</li>
+                <li><a href="#"></a>Social media tags</li>
+                <li><a href="#"></a>Social media tags</li>
+                <li><a href="#"></a>Social media tags</li>
+            </ul>
+            <p class="copyright">Copyright</p>
         </footer>
 
     </body>

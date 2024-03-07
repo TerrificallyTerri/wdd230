@@ -25,6 +25,7 @@ button.addEventListener('click', () => {
             list.removeChild(listLine);
             input.focus();
         })
+        // clear text box
         input.value = '';
     } else
         input.focus();

@@ -25,7 +25,7 @@ main {
 }
 header {
     padding: 15px;
-    background: var(--color5);
+    background-color: var(--color5);
     color: var(--color3);
     font-family: var(--font1);
     font-size: 2em;
