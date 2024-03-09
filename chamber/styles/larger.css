@@ -1,8 +1,5 @@
 /* Css for Chamber Homepage Build → Medium */
 @media screen and (min-width: 991px) {
-    body {
-        /* background-color:blue; */
-    }
     
     header {
         flex-direction: row;
@@ -37,16 +34,6 @@
     .spacer {
         display: none;
     }
-    .slideshow-container {
-        width: 990px;
-        margin: 0 auto;
-    }
-    .mySlides img {
-        width:990px;
-        height: 475px;
-    }
-    .text a {
-        font-size: 2em;
-    }
+
 
 }

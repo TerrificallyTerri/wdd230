@@ -31,9 +31,11 @@
             rel="stylesheet">
 
         <!-- JS script links -->
-        <script defer src="scripts/slideshow.js"></script>
+        <!-- <script defer src="scripts/slideshow.js"></script> -->
         <script defer src="scripts/dropdown.js"></script>
         <script defer src="scripts/darkmode.js"></script>
+        <script defer src="scripts/overlay.js"></script>
+        <script defer src="scripts/windchill.js"></script>
 
 
     </head>
@@ -41,7 +43,7 @@
     <body class="light-mode">
 
         <header>
-            <img src="images/chamber-first-logo6.png" alt="Middelburg Chamber of Commerce 
+            <img src="images/chamber-first-logo6.webp" alt="Middelburg Chamber of Commerce 
                             Logo">
             <h1>Middelburg Chamber Of Commerce</h1>
         </header>
@@ -62,45 +64,25 @@
         <main>
             <div class="spacer"></div>
             <!-- Slideshow container -->
-            <div class="slideshow-container">
-                <!-- Images with captions -->
-                <div class="mySlides">
-                    <div class="numbertext">1/5</div>
-                    <img src="images/art1.jpg" alt="Dr Esther Mahlangu and Ndebele designed BMW">
-                    <div class="text"><a href="join.html">Join the Chamber</a></div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">2/5</div>
-                    <img src="images/agriculture2.jpg" alt="Rich farmlands around Middelburg">
-                    <div class="text"><a href="join.html">Join the Chamber</a></div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3/5</div>
-                    <img src="images/mines2.jpg" alt="Mining industry Mine workers on ore processing plant">
-                    <div class="text"><a href="join.html">Join the Chamber</a></div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4/5</div>
-                    <img src="images/stainless-steel2.jpg" alt="Stainless Steel production">
-                    <div class="text"><a href="join.html">Join the Chamber</a></div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">5/5</div>
-                    <img src="images/powerstation.jpg" alt="Duvah Power Station with Bonsmara cattle in the foreground">
-                    <div class="text"><a href="join.html">Join the Chamber</a></div>
-                </div>
+            <!-- Lesson 6 - Chamber Home Responsive Images -->
+            <div class="hero" id="hero">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/wdd230-org-small.webp">
+                    <source media="(max-width: 990px)" srcset="images/wdd230-org-medium.webp">
+                    <img src="images/wdd230-org-large.webp" alt="Provo City Center Temple" width="1280" height="720">
+                </picture>
             </div>
+
             <div class="events">
                 <h2>Events</h2>
                 <p>Use accordion here</p>
             </div>
             <div class="weather">
                 <h2>Weather</h2>
-                <p>Use verticle flip box</p>
+                <p>Temperature: <span id="temp">...</span> °F</p>
+                <p>Wind Speed: <span id="speed">...</span> mph</p>
+                <p>Wind Chill: <span id="windChill">Calculaating ...</span> °F</p>
+
             </div>
             <div class="cards">
                 <h2>Chamber Member Testimonials</h2>
