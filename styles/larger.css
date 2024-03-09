@@ -1,9 +1,14 @@
 @media screen and (min-width: 720px) {
+    body{
+        font-size: 1.5vw;
+    }
+    
     .navigation {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         background-color: var(--color1);
+        font-size: 1.5vw;
         /* flex-direction: column; */
     }
     #menu {
@@ -16,8 +21,18 @@
     }
     h2{
         grid-column: span 2;
+        font-size: 3vw;
     }
     #map {
         grid-column: 1 / span 2;
+    }
+    .herolabel p {
+        font-size: 1.5rem;
+    }
+    header {
+        font-size: 3vw;
+    }
+    h3 {
+        font-size: 2vw;
     }
 }

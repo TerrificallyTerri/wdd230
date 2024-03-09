@@ -40,7 +40,7 @@
 
       <h1>Terri de Breyn</h1>
     </header>
-    <button id="menu"></button>
+    <button id="menu" aria-label="hamburger button"></button>
     <nav class="navigation">
       <a href="#">Home</a>
       <a href="lesson03/chamber-site-plan.html">Site Plan</a>
@@ -48,6 +48,16 @@
       <a href="https://www.byui.edu/" target="blank">BYU-Idaho</a>
       <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5.26#p26" target="blank">Scripture</a>
     </nav>
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+        <source media="(max-width: 960px)" srcset="images/hero-large.webp">
+        <img src="images/hero-large.webp" alt="Provo Utah Temple" width="1500" height="750">
+      </picture>
+      <div class="herolabel">
+        <p>Washington DC Temple</p>
+      </div>
+    </div>
     <main>
       <h2>WDD 230: Web Frontend Development</h2>
       <section class="card">

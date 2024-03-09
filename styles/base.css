@@ -16,6 +16,7 @@
 body{
     text-align: center;
     font-family: var(--font2);
+    font-size: 3vw;
     margin: auto;
     background-color: var(--color2);
 }
@@ -28,14 +29,14 @@ header {
     background-color: var(--color5);
     color: var(--color3);
     font-family: var(--font1);
-    font-size: 2em;
+    font-size: 3vw;
     display: flex;
     justify-content:center;
     align-items: center;
 }
 header img {
     border-radius: 15%;
-    width: 3em;
+    width: 10vw;
     object-fit: cover;
 }
 h1 {
@@ -80,24 +81,47 @@ h1 {
     color: var(--color1);
     background-color: var(--color5);
 }
+.hero {
+    position: relative;
+    margin: 2vw auto;
+}
+.hero img {
+    height: auto;
+    width: 100%;
+    box-shadow: 9px 15px 50px 10px rgba(57, 61, 61, 0.5);
+}
+
+.herolabel {
+    position:absolute;
+    top: 1.5vw;
+    right: 1.5vw;
+    border: 1px solid var(--color5);
+    padding: 1.5vw;
+    background: linear-gradient(var(--color2), var(--color4));
+    opacity: 0.8;
+    box-shadow: 9px 15px 50px 10px rgba(57, 61, 61, 0.5);
+}
+.herolabel p {
+    font-family: var(--font1);
+    font-size: 0.75rem;
+}
 
 h2 {
     font-family: var(--font3);
-    font-size: 1.75em;
-    line-height: 1.5em;
-    text-decoration: underline 8px var(--color1); 
-    text-underline-offset: 12px ;
+    font-size: 3.5vw;
+    text-decoration: underline 0.75vw var(--color1); 
+    text-underline-offset: 1vw ;
     color: var(--color5);
 }
 .card {
     background-color: var(--color4);
-    margin: 10px;
-    border: 15px solid var(--color1);
+    margin: 1vw;
+    border: 1vw solid var(--color1);
     color: var(--color1);
 }
 h3 {
     color: var(--color1);
-    font-size: 1.5em;
+    font-size: 4vw;
     font-weight: bolder;
     text-decoration: underline;
 }
@@ -110,7 +134,7 @@ li{
     padding-bottom: 1em;
 }
 li a{
-    margin-left: 1.5em;
+    margin-left: 1.5vw;
     color: var(--color1);
     text-decoration: none;
     border-radius: 10px;
