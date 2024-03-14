@@ -33,5 +33,7 @@
     .spacer {
         display: none;
     }
-  
+    .text a {
+        font-size: 3vw;
+    }
 }

@@ -31,7 +31,7 @@
             rel="stylesheet">
 
         <!-- JS script links -->
-        <!-- <script defer src="scripts/slideshow.js"></script> -->
+        <script defer src="scripts/slideshow.js"></script>
         <script defer src="scripts/dropdown.js"></script>
         <script defer src="scripts/darkmode.js"></script>
         <script defer src="scripts/overlay.js"></script>
@@ -65,12 +65,39 @@
             <div class="spacer"></div>
             <!-- Slideshow container -->
             <!-- Lesson 6 - Chamber Home Responsive Images -->
-            <div class="hero" id="hero">
-                <picture>
-                    <source media="(max-width: 600px)" srcset="images/wdd230-org-small.webp">
-                    <source media="(max-width: 990px)" srcset="images/wdd230-org-medium.webp">
-                    <img src="images/wdd230-org-large.webp" alt="Provo City Center Temple" width="1280" height="720">
+            <div class="slideshow-container">
+                <!-- Images with captions -->
+                <picture class="mySlides">
+                    <source media="(max-width: 600px)" srcset="images/art-small.webp">
+                    <source media="(max-width: 880px)" srcset="images/art-medium.webp">
+                    <img src="images/art-large.webp" alt="Dr Esther Mahlangu and Ndebele designed BMW">
                 </picture>
+
+                <picture class="mySlides">
+                    <source media="(max-width: 300px)" srcset="images/field-of-maize-small.webp">
+                    <source media="(max-width: 990px)" srcset="images/field-of-maize-med.webp">
+                    <img src="images/field-of-maize-large.webp" alt="Rich farmlands around Middelburg">
+                </picture>
+
+                <picture class="mySlides">
+                    <source media="(max-width: 300px)" srcset="images/mines-small.webp">
+                    <source media="(max-width: 990px)" srcset="images/mines-medium.webp">
+                    <img src="images/mines-large.webp" alt="Mining industry Mine workers on ore processing plant">
+                </picture>
+
+                <picture class="mySlides">
+                    <source media="(max-width: 300px)" srcset="images/stainless-steel-small.webp">
+                    <source media="(max-width: 990px)" srcset="images/stainless-steel-medium.webp">
+                    <img src="images/stainless-steel-large.webp" alt="Stainless Steel production">
+                </picture>
+
+                <picture class="mySlides">
+                    <source media="(max-width: 300px)" srcset="images/powerstation-small.webp">
+                    <source media="(max-width: 990px)" srcset="images/powerstation-medium.webp">
+                    <img src="images//powerstation-large.webp"
+                        alt="Duvah Power Station with Bonsmara cattle in the foreground">
+                </picture>
+                <div class="text"><a href="join.html">Join the Chamber</a></div>
             </div>
 
             <div class="events">

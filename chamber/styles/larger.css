@@ -34,6 +34,9 @@
     .spacer {
         display: none;
     }
+    .text a {
+        font-size: 1.75vw;
+    }
 
 
 }

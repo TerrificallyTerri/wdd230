@@ -20,6 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.add('dark-mode');
         darkModeToggle.querySelector('.icon').textContent = '🌞 Light';
     } else {
-        body.classList.add('light-mode'); // Add this line to set initial light mode
+        body.classList.add('light-mode');
     }
 });

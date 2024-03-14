@@ -101,9 +101,9 @@ h1 {
     opacity: 0.8;
     box-shadow: 9px 15px 50px 10px rgba(57, 61, 61, 0.5);
 }
-.herolabel p {
+.herolabel h4 {
     font-family: var(--font1);
-    font-size: 0.75rem;
+    font-size: 2.5vw;
 }
 
 h2 {
