@@ -10,7 +10,10 @@
         padding-left: 1em;
     }
     h2 {
-        font-size: 2em;
+        font-size: 3vw;
+    }
+    h3{
+        font-size: 1.75vw;
     }
 
     header img {
@@ -34,9 +37,51 @@
     .spacer {
         display: none;
     }
-    .text a {
-        font-size: 1.75vw;
+    .join button {
+        position: absolute;
+        top: 1.5vw;
+        left: 1.5vw;
+        min-width: 20vw;
+    }
+    .main-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
+        /* Padding for grid container */
+    }
+ 
+    .events-card {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
+    .events-card h2 {
+        margin: 0.5em;
+    }
+     .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 90%;
     }
 
+    .weather {
+        grid-column: 2;
+        grid-row: 1 ;
+        display: grid;
+        grid-template-rows: auto 2fr;
+        margin: 0;
+    }
+    .weather-card {
+        /* width:100; */
+    }
+    .weather h2,
+    .members h2 {
+        text-align: center;
+    }
+    .members{
+        margin: 0;
+    }
 
-}
+} 

@@ -1,9 +1,5 @@
 /* Css for Chamber Homepage Build → Medium */
 @media screen and (min-width: 601px) and (max-width: 990px){
-    body {
-        /* background-color: black; */
-        /* color: aliceblue; */
-    }
     header {
         flex-direction: row;
         justify-content: center;
@@ -13,9 +9,13 @@
         margin: 0.4em 1em;
     }
     h1{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     h2 {
+        font-size: 5vw;
+        margin: 0.25em;
+    }
+    h3{
         font-size: 3vw;
     }
     
@@ -33,7 +33,19 @@
     .spacer {
         display: none;
     }
-    .text a {
-        font-size: 3vw;
+    .main-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .events-card {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 90%;
+
     }
 }

@@ -43,39 +43,55 @@ h1 {
     color: white;
 }
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--heading-font);
     user-select: none;
 }
 h2 {
-    font-size: 5vw;
+    font-size: 6vw;
     color: var(--primary-color);
 }
-
+h2.dummy{
+    margin-top: 10vw;
+}
+p.dummy{
+    padding-top: 10vw;
+    font-size: large;
+}
+a.dummy{
+    display: block;
+    text-decoration: none;
+    font-size: 10vw;
+}
+a.dummy:hover {
+    transform: scale(1.3);
+}
 /* Dropdown */
 #menu {
-    font-size: 1.5em;
+    font-size: 2em;
     border-radius: 5px;
     background: var(--accent1-color);
     color: var(--primary-color);
     position: absolute;
     top: 1rem;
     left: 1rem;
+    min-width: 80px;
+    padding: 0;
 }
-
 #menu::before {
     content: attr(data-content);
 }
-
 #menu.open::before {
     content: attr(data-content);
     z-index: 4;
 }
-
 .navigation {
     display: none;
 }
-
+nav{
+    padding: 5px;
+}
 .navigation.open {
     display: flex;
     flex-direction: column;
@@ -87,7 +103,6 @@ h2 {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-
 .navigation a {
     color: var(--primary-color);
     font-size: 1em;
@@ -95,9 +110,8 @@ h2 {
     padding: 12px 16px;
     text-decoration: none;
 }
-
 .navigation a:hover {
-    background-color: white;
+    background-color: var(--primary-color);
     color: var(--accent1-color);
     cursor: grab;
     border-radius: 10px;
@@ -110,7 +124,10 @@ h2 {
     top: 1vw;
     right: 1vw;
     border-radius: 20px;
-    height: 30px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10px 0px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);;
 }
 body.dark-mode {
@@ -133,6 +150,11 @@ body.dark-mode h2 {
     height: 1vw;
     background-color: var(--secondary-color);
 }
+.spacer2 {
+    max-width: 100vw;
+    height: 3vw;
+    background-color: var(--secondary-color);
+}
 /* slider info */
 /* Slideshow container */
 .slideshow-container {
@@ -141,34 +163,132 @@ body.dark-mode h2 {
     position: relative;
     margin: auto;
 }
-
 /* Hide the images by default */
 .mySlides {
     display: none;
     position: relative;
 }
-
 .mySlides img {
-    max-width: 100%;
+    max-width: 97%;
+    border: 5px solid var(--primary-color)
 }
-
-/* Caption text */
-.text {
-    background-color: var(--primary-color);
-    padding: 8px 12px;
+button.join {
     position: absolute;
     top: 1.5vw;
-    left: 1vw;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
-    max-width: 300px;
+    left: 1.5vw;
+    min-width: 20vw;
+    font-size: large;
 }
 
-.text a {
-    font-size: 4vw;
+button {
+    min-width: 160px;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none;
     text-shadow: 1px 0.5px #242222;
+    font-size: 1rem;
 }
 
+.main-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+}
+.events-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    border: 10px solid var(--secondary-color);
+    
+}
+.events{
+    width:70%;
+    margin: auto;
+}
+.events-card h2{
+    grid-column: 1;
+    text-align: center;
+}
+.events-card section{
+    background-color: var(--accent1-color);
+    border: 3px solid var(--primary-color);
+    padding: 5px;
+    margin: 5px;
+}
+.card-img img {
+    display: block;
+    width:100%;
+    height: auto;
+}
+h3.card {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.event-details {
+    bottom: 15px;
+}
 
+.weather,
+.members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    border: 10px solid var(--secondary-color);    
+}
+.weather-card {
+    background-color: var(--accent1-color);
+    padding: 20px 50px;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    border: 5px solid var(--primary-color);
+    margin-bottom: 20px;
+}
+.mem-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.mem-col {
+    flex: 50%;
+    padding: 0 4px;
+    max-width: 45%;
+}
+.mem-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 60%;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+}
+.social img {
+    width: 10%;
+    margin: 15px 5px;
+    filter: invert(1);
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+footer p{
+    line-height: 0.1;
+}
