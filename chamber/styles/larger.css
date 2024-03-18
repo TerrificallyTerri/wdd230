@@ -30,7 +30,6 @@
     }
 
     #menu {
-        /* hide hamburger when not in use */
         display: none;
     }
 
@@ -49,7 +48,6 @@
         grid-template-rows: 1fr 1fr;
         gap: 10px;
         padding: 20px;
-        /* Padding for grid container */
     }
  
     .events-card {
@@ -57,7 +55,7 @@
         grid-column: 1;
     }
     .events-card h2 {
-        margin: 0.5em;
+        margin: 0.75em;
     }
      .events {
         display: grid;
@@ -74,7 +72,7 @@
         margin: 0;
     }
     .weather-card {
-        /* width:100; */
+        font-size: x-large;
     }
     .weather h2,
     .members h2 {
@@ -84,4 +82,37 @@
         margin: 0;
     }
 
+
+/* Discover Page CSS */
+
+    .disc-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+        align-content: start;
+    }
+
+    .left-col {
+        grid-row: 1;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        width: auto;
+        margin-left: 15px;
+    }
+
+    .venues {
+        grid-row: 3;
+    }
+
+    /* .cal {
+        align-self: start;
+        height: -webkit-fill-available;
+    } */
+
+    .locals {
+        grid-column: 2 / span 1;
+        overflow-y: auto;
+        max-height: calc(2 * (600px + 20px)); 
+    }
 } 

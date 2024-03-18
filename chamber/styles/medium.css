@@ -48,4 +48,11 @@
         width: 90%;
 
     }
+    .weather-card{
+        width: 80%;
+        font-size: x-large;
+    }
+
+    /* Discover Page CSS */
+    
 }
