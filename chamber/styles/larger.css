@@ -115,4 +115,26 @@
         overflow-y: auto;
         max-height: calc(2 * (600px + 20px)); 
     }
+
+    /* ---Join Page CSS--- */
+    .join-page {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: baseline;
+        justify-content: center;
+        gap: 20px;
+    }
+    .membership-benefit-application {
+        grid-column: 1;
+        grid-row: 1 / span 3;
+    }
+    .membership-benefit-table {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        width: 95%;
+        justify-content: center;
+        margin: auto;
+        font-size: large;
+    }
 } 
