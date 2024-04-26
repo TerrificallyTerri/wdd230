@@ -1,0 +1,110 @@
+:root {
+    /* Color Scheme */
+    --color1: #CCD3D9;
+    --color2: #FED5D9;
+    --color3: #7E212C;
+    --color4: #321E17;
+}
+
+body {
+    font-family: "Handlee", cursive;
+    background-color: var(--color2);
+    user-select: none;
+    font-size: clamp(0.75rem, 0.577rem + 0.923vw, 1.5rem);
+}
+h1{
+    font-size: clamp(1rem, 2vw + 1rem, 2.5rem);
+    color: var(--color3);
+    text-decoration: underline;
+    text-align: center;
+    margin: 1em 0 0 0;
+}
+h2 {
+    font-size: clamp(1rem, 1vw + 0.75rem, 2rem);
+    color: var(--color1);
+    background-color: var(--color4);
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+}
+h3 {
+    font-size: clamp(1rem, 0.8vw + 0.6rem, 2rem);
+    color: var(--color4);
+    text-align: center;
+}
+header {
+    background-color: var(--color4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
+}
+header span {
+    font-size: clamp(1rem, 2vw + 1.5rem, 3rem);
+    font-weight: bolder;
+    color: var(--color1);
+    margin-left: 3%;
+}
+header img {
+    border-radius: 15px;
+    width: clamp(3.125rem, 2.404rem + 3.846vw, 6.25rem); 
+    box-shadow: 4px 7px 5px 0px rgba(61, 52, 52, 0.72);
+    margin-right: 3%;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color1);
+    border: 5px solid var(--color3);
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(1rem, 0.8vw + 0.6rem, 2rem);
+    padding: 2px;
+    margin: 3px;
+    color: var(--color4);
+}
+nav a:hover{
+    text-decoration: underline 3px var(--color3);
+    transform: scale(1.2);
+}
+.active {
+    color: var(--color3);
+    text-decoration: underline 3px var(--color4);
+}
+main {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 15px;
+    margin: 10px;
+}
+.card {
+    border: clamp(0.188rem, 0rem + 1vw, 1rem) solid var(--color1);
+    color: var(--color1);
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    list-style: none;   
+    color: var(--color4); 
+    justify-items: center;
+}
+li a {
+    text-decoration: none;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    line-height: 0.5em;
+    text-align: center;
+    font-size: clamp(0.75rem, 0.663rem + 0.462vw, 1.125rem);
+}
+
