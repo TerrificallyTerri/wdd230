@@ -1,8 +1,8 @@
 :root {
     /* Color Scheme */
     --color1: #F5F5F5;
-    --color3: #FF533D;
-    --color2: #AB987A;
+    --color3: #F553CA;
+    --color2: #f3b9d5;
     --color4: #0F1626;
 }
 
@@ -86,8 +86,8 @@ main {
     margin: 10px;
 }
 .card {
-    border: clamp(0.188rem, 0rem + 1vw, 1rem) solid var(--color1);
-    color: var(--color1);
+    border: clamp(0.188rem, 0rem + 1vw, 1rem) solid var(--color3);
+    background-color: var(--color1);
 }
 ul {
     margin: 0;
