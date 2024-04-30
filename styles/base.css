@@ -41,7 +41,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: .8rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 header span {
     font-size: clamp(1rem, 2vw + 1.5rem, 3rem);
@@ -55,9 +55,37 @@ header img {
     box-shadow: 4px 7px 5px 0px rgba(61, 52, 52, 0.72);
     margin-right: 3%;
 }
-nav {
+/* Hammie menu */
+#menu {
+    font-size: 2em;
+    border-radius: 5px;
+    background: var(--color4);
+    color: var(--color3);
+    position: absolute;
+    top: 1.25rem;
+    right: 0.25rem;
+    border: 0;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "←";
+    font-weight: bolder;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
     display: flex;
     flex-direction: column;
+}
+
+nav {
     align-items: center;
     background-color: var(--color1);
     border: 5px solid var(--color3);
@@ -82,8 +110,8 @@ nav a:hover{
 main {
     display: grid;
     grid-template-rows: auto;
-    gap: 15px;
-    margin: 10px;
+    gap: 0.5em;
+    margin: 1em 0.5em 0 0.5em;
 }
 .card {
     border: clamp(0.188rem, 0rem + 1vw, 1rem) solid var(--color3);
@@ -109,8 +137,11 @@ a.activities-link {
     grid-column: 2;
     color: var(--color4);
 }
-footer{
-    line-height: 0.5em;
+footer p {
+    margin: 0.5em 0 0 0;
+    text-align: center;
+}
+footer span {
     text-align: center;
     font-size: clamp(0.75rem, 0.663rem + 0.462vw, 1.125rem);
 }

@@ -2,10 +2,13 @@
     span{
         font-size: 2rem;
     }
-    nav {
+    .navigation {
         flex-direction: row;
         justify-content: space-evenly;
         padding: 10px 0 10px 0;
+    }
+    #menu {
+        display: none;
     }
     main {
         grid-template-rows: max-content max-content max-content;
