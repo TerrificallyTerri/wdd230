@@ -68,7 +68,13 @@ header img {
 span.icon {
     font-size: 1.5rem;
 }
-body.dark-mode h1,
+body.dark-mode h1{
+    color: var(--color1);
+    text-decoration: underline 5px var(--color3);
+}
+body.dark-mode header {
+    border: 5px solid var(--color3);
+}
 body.dark-mode {
     transition: background-color 0.5s ease, color 0.5s ease;
     background-color: var(--color4);
