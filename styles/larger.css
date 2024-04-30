@@ -1,4 +1,7 @@
-@media screen and (min-width:750px) {
+@media screen and (min-width: 32rem) {
+    span{
+        font-size: 2rem;
+    }
     nav {
         flex-direction: row;
         justify-content: space-evenly;
