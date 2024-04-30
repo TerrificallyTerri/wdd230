@@ -67,6 +67,7 @@ nav a{
     margin: 3px;
     color: var(--color4);
 }
+a.activities-link:hover,
 nav a:hover{
     text-decoration: underline 3px var(--color3);
     transform: scale(1.2);
@@ -88,19 +89,22 @@ main {
 ul {
     margin: 0;
     padding: 0;
-}
+    }
 li {
+    list-style: none;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    list-style: none;   
-    color: var(--color4); 
-    justify-items: center;
+    padding: 0.5rem;
 }
-li a {
+span.weeks {
+    grid-area: 1 / 1 / span 3 / span 1;
+    color: var(--color4); 
+    place-self: center;
+}
+a.activities-link {
     text-decoration: none;
     grid-column: 2;
-    display: flex;
-    flex-direction: column;
+    color: var(--color4);
 }
 footer{
     line-height: 0.5em;
