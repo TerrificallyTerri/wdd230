@@ -1,11 +1,9 @@
 @media screen and (min-width: 32rem) {
-    span{
+    .title{
         font-size: 2rem;
     }
     .navigation {
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 10px 0 10px 0;
+        display: flex;
     }
     #menu {
         display: none;
