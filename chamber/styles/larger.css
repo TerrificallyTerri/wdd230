@@ -1,0 +1,23 @@
+@media screen and (min-width: 600px) {
+    .navigation {
+        flex-direction: row;
+    }
+    .main-grid {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-height: 98vh;
+    }
+    .events-card {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
+    .events {
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            width: 90%;
+    }
+    button.event-details {
+        left: 25%;
+    }
+}

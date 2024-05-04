@@ -2,13 +2,205 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chamber Home Page </title>
+        <title>Middelburg Chamber of Commerce</title>
+        <meta name="author" content="Terri de Breyn">
+        <meta name="description" content="Middelburg Chamber of Commerce
+                    Provide details about investment opportunities in and around Midddelburg
+                    Middelburg Mpumalanga
+                    Investment
+                    Opportunity">
+        <!--  Essential META Tags -->
+        <meta property="og:title" content="Middelburg Investment Chamber">
+        <meta property="og:type" content="website">
+        <meta property="og:image"
+            content="https://www.pamgolding.co.za/Uploads/areaguides/2d97e116-b7c1-4fdf-80a4-74e9bdc62003/Header/middelburg-area-guide.jpg">
+        <meta property="og:url" content="https://terrificallyterri.github.io/wdd230/chamber">
+        <link rel="icon" href="images/favicon.ico">
+
+        <!-- Style Sheet references -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <!-- text links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap"
+            rel="stylesheet">
+
+        <!-- JS script links -->
+        <script defer src="scripts/slideshow.js"></script>
+        <script defer src="scripts/getdates.js"></script>
+        <!-- <script defer src="scripts/windchill.js"></script> -->
+        <script defer src="scripts/buttons.js"></script>
+
     </head>
 
     <body>
-        <h1>Coming Soon</h1>
+
+        <header>
+            <img class="logo-img" src="images/chamber-first-logo6.webp" alt="Middelburg Chamber of Commerce 
+                            Logo">
+            <h1>Middelburg Chamber Of Commerce</h1>
+        </header>
+
+        <nav class="navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join the Chamber</a>
+        </nav>
+
+        <main>
+            <div class="spacer"></div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <button class="join">Join the Chamber</button>
+                <!-- Images with captions -->
+                <picture class="mySlides">
+                    <source media="(max-width: 450px)" srcset="images/art-small.webp">
+                    <source media="(max-width: 770px)" srcset="images/art-medium.webp">
+                    <img src="images/art-large.webp" alt="Dr Esther Mahlangu and Ndebele designed BMW">
+                </picture>
+                <picture class="mySlides">
+                    <source media="(max-width: 450px)" srcset="images/field-of-maize-small.webp">
+                    <source media="(max-width: 770px)" srcset="images/field-of-maize-medium.webp">
+                    <img src="images/field-of-maize-large.webp" alt="Rich farmlands around Middelburg">
+                </picture>
+                <picture class="mySlides">
+                    <source media="(max-width: 450px)" srcset="images/mines-small.webp">
+                    <source media="(max-width: 770px)" srcset="images/mines-medium.webp">
+                    <img src="images/mines-large.webp" alt="Mining industry Mine workers on ore processing plant">
+                </picture>
+                <picture class="mySlides">
+                    <source media="(max-width: 450px)" srcset="images/stainless-steel-small.webp">
+                    <source media="(max-width: 770px)" srcset="images/stainless-steel-medium.webp">
+                    <img src="images/stainless-steel-large.webp" alt="Stainless Steel production">
+                </picture>
+                <picture class="mySlides">
+                    <source media="(max-width: 450px)" srcset="images/powerstation-small.webp">
+                    <source media="(max-width: 770px)" srcset="images/powerstation-medium.webp">
+                    <img src="images//powerstation-large.webp"
+                        alt="Duvah Power Station with Bonsmara cattle in the foreground">
+                </picture>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="main-grid">
+                <div class="events-card">
+                    <h2>Events</h2>
+                    <div class="events">
+                        <div class="card-content">
+                            <h3>121<sup>st</sup>Annual Banquet</h3>
+                            <picture class="card-img">
+                                <img src="images/banquet-2024.webp" alt="Annual Banquet">
+                            </picture>
+                            <button class="event-details">Event Details</button>
+                        </div>
+                        <div class="card-content">
+                            <h3>2024 MCCI Golf Day</h3>
+                            <picture class="card-img">
+                                <img src="images/golfday.webp" alt="Close-up of golf ball on green">
+                            </picture>
+                            <button class="event-details">Event Details</button>
+                        </div>
+                        <div class="card-content">
+                            <h3>Business Buzzer Day</h3>
+                            <picture class="card-img">
+                                <img src="images/buzz.webp" alt="Collaboration of Business people">
+                            </picture>
+                            <button class="event-details">Event Details</button>
+                        </div>
+                        <div class="card-content">
+                            <h3>Women's Day Event</h3>
+                            <picture class="card-img">
+                                <img src="images/womens-day.webp" alt="Celebration of women's day event">
+                            </picture>
+                            <button class="event-details">Event Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <div class="weather-card">
+                        <p>Temperature: <span id="temp">...</span> °F</p>
+                        <p>Wind Speed: <span id="speed">...</span> mph</p>
+                        <p>Wind Chill: <span id="windChill">Calculating ...</span> °F</p>
+                    </div>
+                </div>
+
+                <div class="members">
+                    <h2>Proud Chamber Members</h2>
+                    <div class="mem-row">
+                        <div class="mem-col">
+                            <img src="images/logo-armada.webp" alt="Armada Logo">
+                            <img src="images/logo-bolt.webp" alt="Bolt Logo">
+                            <img src="images/logo-lodge.webp" alt="Lodge Logo">
+                            <img src="images/logo-project.webp" alt="Project Logo">
+                            <img src="images/logo-seef.webp" alt="Seef Logo">
+                        </div>
+                        <div class="mem-col">
+                            <img src="images/logo-corn.webp" alt="Resturant Logo">
+                            <img src="images/logo-makelaars.webp" alt="MAkelaars Logo">
+                            <img src="images/logo-shockwave.webp" alt="Shockwave Logo">
+                            <img src="images/logo-medo.webp" alt="Medo Logo">
+                            <img src="images/logo-elite.webp" alt="Elite Logo">
+                            <img src="images/logo-aldes.webp" alt="Aldes Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <div class="spacer"></div>
+        <footer>
+            <div class="chamber">
+                <img class="logo-img" src="images/chamber-first-logo6.webp" alt="chamber-logo">
+                <ul>
+                    <li>Middelburg Chamber of Commerce</li>
+                    <li>292 Walter Sisulu Drive</li>
+                    <li>Middelburg</li>
+                    <li>South Africa</li>
+                </ul>
+                <ul>
+                    <li>Contact:</li>
+                    <li>Email: info@mdb.org</li>
+                    <li>Telephone: +2713 246 1388</li>
+                    <li><a href="https://www.google.com/maps/@-25.7782302,29.4401676,15z?entry=ttu"
+                            target="_blank">📍Location Map</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <a href="dummy.html" target="_blank">
+                    <img src="images/icon-facebook.webp" alt="fb icon">
+                </a>
+                <a href="dummy.html" target="_blank">
+                    <img src="images/icons-twitterx.webp" alt="twitter icon">
+                </a>
+                <a href="dummy.html" target="_blank">
+                    <img src="images/icon-linkedin.webp" alt="linkedin icon">
+                </a>
+                <a href="dummy.html" target="_blank">
+                    <img src="images/icon-github.webp" alt="github icon">
+                </a>
+                <a href="dummy.html" target="_blank">
+                    <img src="images/icon-whatsapp.webp" alt="whatsapp icon">
+                </a>
+            </div>
+            <div class="dev-info">
+                <span id="lastModified"></span> <br>&copy; <span id="year"> </span><span> | Terri de Breyn | South
+                    Africa | </span>
+            </div>
+
+
+
+        </footer>
+
     </body>
 
 </html>
