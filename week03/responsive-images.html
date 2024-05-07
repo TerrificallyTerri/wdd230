@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- basic html layout for most tasks - review and adjust as required -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Change here -->
+        <title>Week 3: Responsive Images</title>
+        <meta name="author" content="Terri de Breyn">
+        <!-- update here -->
+        <meta name="description" content="Responsive Images
+                srcset
+                webP images
+                optimized
+                picture tag">
+        <!--  Essential META Tags -->
+        <!-- update these -->
+        <meta property="og:title" content="Responsive Images">
+        <meta property="og:type" content="WDD230: Week 03">
+        <!-- update this -->
+        <meta property="og:image"
+            content="https://public-images.interaction-design.org/literature/articles/heros/article_130515_hero_636e39613117f1.68703759.jpg?tr=w-1024">
+        <meta property="og:url" content="https://terrificallyterri.github.io/wdd230/chamber">
+        <!-- favicon -->
+
+        <!-- Style Sheet references -->
+        <!-- add and update -->
+        <link rel="stylesheet" href="styles/responsive-images.css">
+
+        <!-- text links -->
+
+        <!-- JS script links -->
+        <script defer src="/scripts/getdates.js"></script>
+
+    </head>
+    <header>
+        <h1>Responsive Images</h1>
+        <nav><a href="/index.html">🏠</a></nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Provo City Center Temple" width="1500" height="750">
+
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="year"></span><span> 🌸 Terri de Breyn 🌸 South Africa</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</html>
