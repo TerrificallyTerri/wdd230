@@ -1,6 +1,10 @@
 @media screen and (min-width: 600px) {
     .navigation {
+        display: flex;
         flex-direction: row;
+    }
+    #menu {
+        display: none;
     }
     .main-grid {
         grid-template-columns: 2fr 1fr;
