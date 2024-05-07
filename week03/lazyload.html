@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- basic html layout for most tasks - review and adjust as required -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Change here -->
+        <title>WDD 230 - Lesson 07 - Lazy Loading</title>
+        <meta name="author" content="Terri de Breyn">
+        <!-- update here -->
+        <meta name="description" content="Lazy loading of images">
+        <!--  Essential META Tags -->
+        <!-- update these -->
+        <meta property="og:title" content="WDD 230 - Lesson 03 - Lazy Loading">
+        <meta property="og:type" content="website">
+        <!-- update this -->
+        <meta property="og:image"
+            content="data:image/png;base64,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">
+        <meta property="og:url" content="https://terrificallyterri.github.io/wdd230/chamber">
+        <!-- favicon -->
+        <!-- Style Sheet references -->
+        <!-- add and update -->
+        <link rel="stylesheet" href="styles/lazyload.css">
+
+        <!-- JS script links -->
+        <!-- add and update as needed -->
+        <script defer src="/scripts/getdates.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Lazy Loading</h1>
+        </header>
+        <nav><a href="/index.html">🏠</a></nav>
+        <main>
+            <picture><img src="https://picsum.photos/400/600?random=1.webp" alt="random image 1" loading="lazy"
+                    width="400" height="600"></picture>
+            <picture><img src="https://picsum.photos/400/600?random=2.webp" alt="random image 2" loading="lazy"
+                    width="400" height="600"></picture>
+            <picture><img src="https://picsum.photos/400/600?random=3.webp" alt="random image 3" loading="lazy"
+                    width="400" height="600"></picture>
+            <picture><img src="https://picsum.photos/400/600?random=4.webp" alt="random image 4" loading="lazy"
+                    width="400" height="600"></picture>
+            <picture><img src="https://picsum.photos/400/600?random=5.webp" alt="random image 5" loading="lazy"
+                    width="400" height="600"></picture>
+            <picture><img src="https://picsum.photos/400/600?random=6.webp" alt="random image 6" loading="lazy"
+                    width="400" height="600"></picture>
+        </main>
+    </body>
+    <footer>
+        <p>
+            &copy; <span id="year"></span><span> 🌸 Terri de Breyn 🌸 South Africa</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</html>

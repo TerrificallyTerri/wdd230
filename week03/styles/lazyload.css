@@ -1,0 +1,29 @@
+body {
+    text-align: center;    
+    margin: 0 auto;
+    width: 400px;
+}
+nav a {
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+/* main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} */
+
+img {
+    background: black;
+    animation: fade 10s;
+    display: block;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
