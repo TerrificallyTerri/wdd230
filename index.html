@@ -35,6 +35,7 @@
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/hamburger.js"></script>
     <script defer src="scripts/darkmode.js"></script>
+    <script defer src="scripts/visits.js"></script>
 
   </head>
 
@@ -58,6 +59,16 @@
       <a href="./chamber/index.html" target="blank">Chamber</a>
       <a href="#" target="blank">Form</a>
     </nav>
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+        <source media="(max-width: 960px)" srcset="images/hero-large.webp">
+        <img src="images/hero-large.webp" alt="Provo Utah Temple" width="1000" height="500">
+      </picture>
+      <div class="herolabel">
+        <h2 class="hero-text">Washington DC Temple</h2>
+      </div>
+    </div>
     <main>
       <h1>WDD 230: Web Frontend Development</h1>
       <section class="card">
@@ -102,8 +113,14 @@
       <section class="card">
         <h2>Information</h2>
         <h3>Weather</h3>
-        <h3>Visits</h3>
+        <h3>Visits to Site:</h3>
+        <span id="visits">
+        </span>
+        <button id="reset">Reset</button>
       </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23785.61943648131!2d29.46752109591689!3d-25.77245830733364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1715190507952!5m2!1sen!2sza"
+        width="1000" height="500" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
       <p>

@@ -28,6 +28,7 @@ h2 {
     text-align: center;
     padding: 8px;
     margin: 0;
+    text-wrap: nowrap;
 }
 h3 {
     font-size: clamp(1rem, 0.8vw + 0.6rem, 2rem);
@@ -35,7 +36,7 @@ h3 {
     text-align: center;
 }
 header {
-    display: relative;
+    position: relative;
 }
 .heading {
     background-color: var(--color4);
@@ -94,16 +95,13 @@ body.dark-mode {
     right: 0.25rem;
     border: 0;
 }
-
 #menu::before {
     content: "☰";
 }
-
 #menu.open::before {
     content: "←";
     font-weight: bolder;
 }
-
 .navigation {
     display: none;
     flex-direction: row;
@@ -113,7 +111,6 @@ body.dark-mode {
     padding: 1rem 0 1rem 0;
     border: 5px solid var(--color3);
 }
-
 .navigation.open {
     display: flex;
     flex-direction: column;
@@ -136,15 +133,31 @@ nav a:hover{
     color: var(--color4);
     text-decoration: underline 3px var(--color3);
 }
+.hero {
+    align-content: center;
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.herolabel {
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    opacity: 0.75;
+}
 main {
     display: grid;
     grid-template-rows: auto;
     gap: 0.5em;
     margin: 1em 0.5em 0 0.5em;
 }
-.card {
+.card,
+iframe {
     border: 5px solid var(--color3);
     background-color: var(--color1);
+    text-align: center;
 }
 ul {
     margin: 0;
@@ -165,6 +178,18 @@ a.activities-link {
     text-decoration: none;
     grid-column: 2;
     color: var(--color4);
+}
+#reset {
+    background-color: var(--color3);
+    color: var(--color4);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+}
+iframe {
+    width: 99%;
 }
 footer p {
     margin: 0.5em 0 0 0;
