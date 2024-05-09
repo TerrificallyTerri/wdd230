@@ -71,6 +71,9 @@ header img {
 }
 span.icon {
     font-size: 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
 }
 body.dark-mode h1{
     color: var(--color1);
