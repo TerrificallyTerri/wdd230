@@ -125,11 +125,11 @@ nav a{
     font-size: clamp(1rem, 0.8vw + 0.6rem, 2rem);
     padding: 2px;
     margin: 3px;
-    color: var(--color3);
+    color: var(--color4);
 }
 a.activities-link:hover,
 nav a:hover{
-    text-decoration: underline 3px var(--color4);
+    text-decoration: underline 3px var(--color3);
     transform: scale(1.2);
 }
 .active {
