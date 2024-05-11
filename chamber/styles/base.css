@@ -237,13 +237,6 @@ ul {
     border: clamp(0.313rem, 0.168rem + 0.769vw, 0.938rem) solid var(--secondary-color);
     margin: 20px 10px 0 10px;
 } 
-.cal-container {
-    width: 95%;
-    margin: auto;
-}
-.cal-container iframe {
-    width:100%;
-}
 .accordion-card {
     border-bottom: 1px solid var(--primary-color);
     width: 95%;
@@ -252,16 +245,6 @@ ul {
 .accordion {
     width: 100%;
     text-align: left;
-}
-.accordion.active,
-.accordion:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-.panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
 }
 .panel img {
     width: 95%;

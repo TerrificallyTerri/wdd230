@@ -16,21 +16,20 @@
     }
     .locals {
         grid-column: 2 /span 2;
-        grid-row: span 2;
-        overflow-y: auto;
-        max-height: calc(2 * (600px + 20px));
+        grid-row: span 2;        
     }
     .local-cards img:hover {
         filter: brightness(1.2);
     }
     .left-col {
         grid-row: span 2;
+        max-height: fit-content;
     }
     .events {
         display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            width: 90%;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 90%;
     }
     button.event-details {
         left: 25%;
