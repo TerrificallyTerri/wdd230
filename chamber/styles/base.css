@@ -34,16 +34,17 @@ h3 {
     margin: 0;
     padding: 10px;
 }
+
 button {
     min-width: 75px;
-    padding: 5px 5px;
+    padding: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     outline: none;
     border-radius: 5px;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
     background: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--accent1-color);
     text-decoration: none;
     font-size: clamp(0.75rem, 0.577rem + 0.923vw, 1.5rem);
 }
@@ -57,7 +58,7 @@ header {
     justify-content: flex-start;
 }
 .logo-img {
-    margin: 0.5em;
+    margin: 0.6em;
     filter: invert(1);
     width: 10vw;
     height: 10vw;
@@ -130,14 +131,11 @@ button.join {
     bottom: 10px;
     right: 10px;
 }
-
-
-
 picture.mySlides img{
     width: 100%;
     object-fit: cover;
     object-position: bottom;
-    margin-bottom: -1em ;
+    margin-bottom: -0.3em ;
 }
 .main-grid {
     display: grid;
@@ -225,4 +223,69 @@ ul {
 }
 .social img:hover {
     transform: scale(1.2);
+}
+
+/* DISCOVER PAGE */
+.left-col {
+    display: flex;
+    flex-direction: column;
+}
+.cal,
+.visitor-info,
+.venues,
+.locals {
+    border: clamp(0.313rem, 0.168rem + 0.769vw, 0.938rem) solid var(--secondary-color);
+    margin: 20px 10px 0 10px;
+} 
+.cal-container {
+    width: 95%;
+    margin: auto;
+}
+.cal-container iframe {
+    width:100%;
+}
+.accordion-card {
+    border-bottom: 1px solid var(--primary-color);
+    width: 95%;
+    margin: 5px auto; 
+}
+.accordion {
+    width: 100%;
+    text-align: left;
+}
+.accordion.active,
+.accordion:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.panel img {
+    width: 95%;
+    height: auto;
+    border-radius: 5px;
+}
+.local-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+    border: 5px solid var(--accent1-color);
+    position:relative;
+}
+.local-cards img {
+    max-width: 100%;
+    height: auto;
+}
+.caption {
+    background-color: rgba(0, 38, 89, 0.75);
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    color: white;
+    margin: 0;
 }

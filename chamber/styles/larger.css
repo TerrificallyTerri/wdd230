@@ -7,12 +7,24 @@
         display: none;
     }
     .main-grid {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
     .events-card {
         grid-row: 1 / span 2;
-        grid-column: 1;
+        grid-column: 1 / span 2;
+    }
+    .locals {
+        grid-column: 2 /span 2;
+        grid-row: span 2;
+        overflow-y: auto;
+        max-height: calc(2 * (600px + 20px));
+    }
+    .local-cards img:hover {
+        filter: brightness(1.2);
+    }
+    .left-col {
+        grid-row: span 2;
     }
     .events {
         display: grid;
