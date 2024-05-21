@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
+table {
+    margin:auto;
+    text-align: center;
+    border:1px solid grey;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border-collapse: collapse;
+}
+thead {
+    background-color: black;
+    color: white;
+}
+tr:first-child th:first-child {
+    background-color: black;
+    color: white;
+}
+tr:first-child {
+    background-color: darkgrey;
+}
+tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+caption {
+    color: darkslategrey;
+    caption-side: bottom;
+}
+p {
+    text-align: center;
+}

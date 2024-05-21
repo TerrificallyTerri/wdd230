@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- basic html layout for most tasks - review and adjust as required -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Change here -->
+        <title>HTML Tables</title>
+        <meta name="author" content="Terri de Breyn">
+        <!-- update here -->
+        <meta name="description" content="WDD 230 Leson 8 HTML Tables and nth-child CSS">
+        <!--  Essential META Tags -->
+        <!-- update these -->
+        <meta property="og:title" content="HTML Tables">
+        <meta property="og:type" content="website">
+        <!-- update this -->
+        <meta property="og:image"
+            content="https://media.geeksforgeeks.org/wp-content/uploads/20200405130022/TableCreation.png">
+        <meta property="og:url" content="https://terrificallyterri.github.io/wdd230/lesson08/tablebuild.html">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/tablebuild.css">
+
+        <script defer src="../scripts/getdates.js"></script>
+    </head>
+
+    <body>
+        <div class="table">
+            <table>
+                <caption>Table 1: Account Feature Comparison</caption>
+                <thead>
+                    <tr>
+                        <th colspan="4">ACME Wildwest Services</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="empty"></th>
+                        <th>Basic</th>
+                        <th>Premium</th>
+                        <th>Delux</th>
+                    </tr>
+                    <tr>
+                        <th>Feature 1</th>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th>Feature 2</th>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th>Feature 3</th>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <p>
+                🌸 &copy; <span id="year"></span><span> 🌸 WDD 230 🌸 Terri de Breyn 🌸 South Africa 🌸</span>
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
+
+</html>
