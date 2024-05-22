@@ -1,0 +1,93 @@
+:root {
+    /* Color Scheme */
+    --color1: #F5F5F5;
+    --color3: #f936c5;
+    --color2: #f3b9d5;
+    --color4: #0F1626;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 1rem 0 1rem 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+fieldset {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    border: 5px solid var(--color3);
+}
+legend {
+    font-weight:800;
+    text-align: center;
+}
+label {
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+}
+label input { 
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.25rem;
+    box-sizing: border-box;
+}
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 28px;
+    background: var(--color3);
+    outline: none;
+    border-radius: 12px;
+}
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color1);
+    cursor: pointer;
+    /* https://blog.hubspot.com/website/html-slider */
+}
+datalist {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    justify-content: space-between;
+}
+input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: var(--color3);
+    color: var(--color4);
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type="submit"]:hover {
+    background-color: color1;
+}
+#rangevalue {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+input:required {
+    border-left: 3px solid red;
+}
+input:required:valid {
+    border-left: 10px solid green
+}

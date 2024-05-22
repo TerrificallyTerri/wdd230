@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Terri de Breyn - WDD 230 - Web Frontend Development</title>
+        <meta name="author" content="Terri de Breyn">
+        <meta name="description" content="WDD 230 - Web Frontend Development
+                             Terri de Breyn
+                             course assignment portal
+                             learning html javascript css">
+
+        <!-- Open Graph Meta Properties -->
+        <meta property="og:title" content="WDD 230 Home Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image"
+            content="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320/https://witkerk.co.za/wp-content/uploads/2020/01/Witkerk-skildery-1938.jpg">
+        <meta property="og:url" content="https://terrificallyterri.github.io/wdd230/">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/form.css">
+
+        <!-- Scripts -->
+        <script defer src="scripts/getdates.js"></script>
+        <script defer src="scripts/hamburger.js"></script>
+        <script defer src="scripts/darkmode.js"></script>
+        <script defer src="scripts/form.js"></script>
+
+    </head>
+
+    <body class="light-mode">
+        <header>
+            <span class="heading">
+                <img src="images/photo.webp" alt="Bespectacled female">
+                <span class="title">
+                    Terri de Breyn
+                </span>
+            </span>
+            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
+                <span class="icon">🌚</span>
+            </button>
+        </header>
+
+        <button id="menu" aria-label="hamburger button"></button>
+        <nav class="navigation">
+            <a class="active" href="#">Home</a>
+            <a href="week01/chamber-site-plan.html" target="blank">Site Plan</a>
+            <a href="./chamber/index.html" target="blank">Chamber</a>
+            <a href="#" target="blank">Form</a>
+        </nav>
+        <main>
+            <h1>WDD 230: Form</h1>
+            <form method="get" action="record.html">
+                <fieldset>
+                    <legend>Information</legend>
+                    <label>Username* <input type="text" id="username" name="username" required></label>
+                    <label>Password* <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}"
+                            placeholder="Min 8 alphanumeric characters" required></label>
+                    <label>Confirm Password* <input type="password" id="confirm_password" name="confirm_password"
+                            required></label>
+                    <div id="pswmessage"></div>
+                    <label>Email* <input type="email" name="email" placeholder="name@byui.edu"
+                            title="Please enter your BYUI email address" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$"
+                            required></label>
+                    <div id="emailmessage"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Rate Us</legend>
+                    <label for="range">
+                        <input class="slider" type="range" id="range" name="range" min="0" max="10" value="0" step="1"
+                            list="rangevalues">
+                        <datalist id="rangevalues">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </datalist>
+                    </label>
+                    <div id="rangevalue">Your Rating: </div>
+                </fieldset>
+                <input type="submit" value="Rate This Page">
+            </form>
+        </main>
+        <footer>
+            <p>
+                🌸 &copy; <span id="year"></span><span> 🌸 WDD 230 🌸 Terri de Breyn 🌸 South Africa 🌸</span>
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
+</html>
