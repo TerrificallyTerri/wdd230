@@ -1,0 +1,35 @@
+{
+    "memberInformation": {
+        "familyName": "Jones",
+        "dateMovedIn": "2024-03-26",
+        "peopleInFamily": 5,
+        "visitedByBishop": true,
+        "familyMembers": [
+            {
+                "name": "John Jones",
+                "gender": "Male",
+                "birthdate": "1975-02-17"
+            },
+            {
+                "name": "Jessica Jones",
+                "gender": "Female",
+                "birthdate": "1980-09-21"
+            },
+            {
+                "name": "Tommy Jones",
+                "gender": "Male",
+                "birthdate": "2015-03-14"
+            },
+            {
+                "name": "Felix Jones",
+                "gender": "Male",
+                "birthdate": "2017-01-30"
+            },
+            {
+                "name": "Kara Jones",
+                "gender": "Female",
+                "birthdate": "2019-05-14"
+            }
+        ]
+    }
+}
