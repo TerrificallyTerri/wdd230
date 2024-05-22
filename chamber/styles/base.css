@@ -295,7 +295,6 @@ ul {
 }
 .ma1 legend {
     color: var(--primary-color);
-    font-size: large;
     padding: 0 .5rem;
 }
 .ma1 label {
@@ -375,7 +374,6 @@ caption {
 }
 .mem-ben thead tr th {
     background-color: var(--secondary-color);
-    font-size: larger;
     padding: 15px;
 }
 .mem-ben th{
@@ -384,7 +382,6 @@ caption {
 th, td {
     padding: 10px;
     border: 2px solid var(--secondary-color);
-    font-size: small;
 }
 tr:nth-child(even){
     background-color: var(--accent1-color);
