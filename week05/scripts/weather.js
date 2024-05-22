@@ -2,7 +2,15 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = "https:api.openweathermap.org/data/2.5/weather?lat=49.5&lon=6.64&appid=3a3e43bafe7ebe44d2787a69cae22297&units=metric";
+// const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.5&lon=6.64&appid=3a3e43bafe7ebe44d2787a69cae22297&units=metric";
+// Trying another way to keep my url absolute 😣😡
+const baseURL = "https://api.openweathermap.org/data/2.5/weather";
+const lat = 49.5;
+const lon = 6.64;
+const apiKey = "3a3e43bafe7ebe44d2787a69cae22297";
+const units = "metric";
+const url = new URL(`${baseURL}?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`);
+
 
 async function apiFetch() {
     try {
