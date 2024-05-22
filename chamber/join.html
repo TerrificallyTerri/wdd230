@@ -32,7 +32,6 @@
             rel="stylesheet">
 
         <!-- JS script links -->
-        <script defer src="scripts/slideshow.js"></script>
         <script defer src="scripts/getdates.js"></script>
         <!-- <script defer src="scripts/windchill.js"></script> -->
         <script defer src="scripts/buttons.js"></script>
@@ -45,6 +44,7 @@
             <img class="logo-img" src="images/chamber-first-logo6.webp" alt="Middelburg Chamber of Commerce 
                             Logo">
             <h1>Middelburg Chamber Of Commerce</h1>
+            <button id="menu">≡</button>
         </header>
 
         <nav class="navigation">
@@ -55,11 +55,219 @@
         </nav>
 
         <main>
-            <h2>Be here soon 😎</h2>
+            <div class="spacer"></div>
+            <h2>Middelburg Chamber of Commerce Membership Application</h2>
+            <div class="main-grid">
+                <div class="membership-benefit-application">
+                    <form class="ma1" action="thankyou.html" method="get">
+                        <fieldset>
+                            <legend>Applicant Information</legend>
+                            <label>First Name* <input type="text" name="app-fname" pattern="[a-zA-Z-]+"
+                                    required></label>
+                            <label>Last Name* <input type="text" name="app-lname" pattern="[a-zA-Z-]+" required></label>
+                            <label>Official Position* <input type="text" name="app-lname" required
+                                    pattern="[a-zA-Z\s-]{7,}" placeholder="Please enter your current position"></label>
+                            <label>Email Address* <input type="email" name="app-email" placeholder="name@business.com"
+                                    required></label>
+                            <label>Personal Phone <input type="tel" name="app-phone" placeholder="0123456789"></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Business Information</legend>
+                            <label>Trading Name* <input type="text" name="trade-name" pattern="[a-zA-Z0-9]+"
+                                    required></label>
+                            <label>Registration Number* <input type="text" name="registration" pattern="[a-zA-Z0-9]+"
+                                    required></label>
+                            <label>Company Website Address <input type="url" name="url" placeholder="http://"></label>
+                            <label>Areas of Sevice
+                                <select name="service-area">
+                                    <option value="">Please Select &#9662;</option>
+                                    <option value="alberton">Alberton</option>
+                                    <option value="arnot">Arnot</option>
+                                    <option value="badplaas">Badplaas</option>
+                                    <option value="blinkpan">Blinkpan</option>
+                                    <option value="carltonville">Carltonville</option>
+                                    <option value="doornkop">Doornkop</option>
+                                    <option value="dullstroom">Dullstroom</option>
+                                    <option value="emalahleni">Emalahleni</option>
+                                    <option value="ermelo">Ermelo</option>
+                                    <option value="groblersdal">Groblersdal</option>
+                                    <option value="hendrina">Hendrina</option>
+                                    <option value="koornfontein">Koornfontein</option>
+                                    <option value="kriel">Kriel</option>
+                                    <option value="middelburg">Middelburg</option>
+                                    <option value="ogies">Ogies</option>
+                                </select>
+                            </label>
+                            <label>Business Description* <textarea name="bus-description" cols="30" rows="3"
+                                    required></textarea></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Membership Level</legend>
+                            <label><input type="radio" name="membership" value="npmember" required> Non-Profit
+                                Membership</label>
+                            <label><input type="radio" name="membership" value="bronze-member"> Bronze
+                                Membership</label>
+                            <label><input type="radio" name="membership" value="npmember"> Silver Membership</label>
+                            <label><input type="radio" name="membership" value="npmember"> Gold Membership</label>
+                        </fieldset>
+                        <input type="hidden" id="submit-time" name="submit-time">
+                        <input type="submit" value="Apply for My Benefits">
+                    </form>
+                </div>
+                <div class="membership-benefit-table">
+                    <table class="mem-ben">
+                        <!-- <caption>Membership Benefits</caption> -->
+                        <thead>
+                            <tr>
+                                <th colspan="5">Membership Benefits</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <th></th>
+                            <!-- <th>Public</th> -->
+                            <th>Non Profit</th>
+                            <th>Bronze</th>
+                            <th>Silver</th>
+                            <th>Gold</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <th>Access to Delegates</th>
+                                <!-- <td>None</td> -->
+                                <td>Conditional</td>
+                                <td>Restricted</td>
+                                <td>Limited</td>
+                                <td>Full access</td>
+                            </tr>
+                            <tr>
+                                <th>Networking</th>
+                                <!-- <td>Full cost</td> -->
+                                <td>Free</td>
+                                <td>3 p/a</td>
+                                <td>6 p/a</td>
+                                <td>Full</td>
+                            </tr>
+                            <tr>
+                                <th>Major Events</th>
+                                <!-- <td>Full Cost</td> -->
+                                <td>Invitation</td>
+                                <td>10% off</td>
+                                <td>25% off</td>
+                                <td>80% off</td>
+                            </tr>
+                            <tr>
+                                <th>Local Procurement</th>
+                                <!-- <td>Limited</td> -->
+                                <td>Full</td>
+                                <td>Full</td>
+                                <td>Full</td>
+                                <td>Full</td>
+                            </tr>
+                            <tr>
+                                <th>Member Deals</th>
+                                <!-- <td>None</td> -->
+                                <td>Limited</td>
+                                <td>Accessible</td>
+                                <td>Accessible</td>
+                                <td>Accessible</td>
+                            </tr>
+                            <tr>
+                                <th>Venues to Hire</th>
+                                <!-- <td>Full</td> -->
+                                <td>Selected</td>
+                                <td>10% off</td>
+                                <td>25% off</td>
+                                <td>80% off</td>
+                            </tr>
+                            <tr>
+                                <th>Sponsorships</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>Selected</td>
+                                <td>10% off</td>
+                                <td>20% off</td>
+                                <td>50% off</td>
+                            </tr>
+                            <tr>
+                                <th>Certification</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>10% off</td>
+                                <td>10% off</td>
+                                <td>20% off</td>
+                                <td>50% off</td>
+                            </tr>
+                            <tr>
+                                <th>Export Assistance</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>None</td>
+                                <td>Free</td>
+                                <td>Free</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <th>Sponsorships</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>Selected</td>
+                                <td>10% off</td>
+                                <td>20% off</td>
+                                <td>50% off</td>
+                            </tr>
+                            <tr>
+                                <th>Mail Shots</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>Selected</td>
+                                <td>10% off</td>
+                                <td>20% off</td>
+                                <td>50% off</td>
+                            </tr>
+                            <tr>
+                                <th>MCCI Vouchers</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>To purchase only</td>
+                                <td>Redeem at Members</td>
+                                <td>Redeem at Members</td>
+                                <td>Redeem at Members</td>
+                            </tr>
+                            <tr>
+                                <th>Lobbying</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Running of Courses</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>Profit Share</td>
+                                <td>Profit Share</td>
+                                <td>Profit Share</td>
+                                <td>Profit Share</td>
+                            </tr>
+                            <tr>
+                                <th>Portfolio Committee</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>Not Availabe</td>
+                                <td>Free</td>
+                                <td>Free</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <th>Training</th>
+                                <!-- <td>Full Rate</td> -->
+                                <td>Selected</td>
+                                <td>10% off</td>
+                                <td>20% off</td>
+                                <td>50% off</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </main>
+        <div class="spacer"></div>
         <footer>
             <div class="chamber">
-                <img class="logo-img" src="images/chamber-first-logo6.webp" alt="chamber-logo">
+                <img class="logo-img" src="images/chamber-first-logo6.webp" alt="chamber-logo" loading="lazy">
                 <ul>
                     <li>Middelburg Chamber of Commerce</li>
                     <li>292 Walter Sisulu Drive</li>
@@ -71,34 +279,30 @@
                     <li>Email: info@mdb.org</li>
                     <li>Telephone: +2713 246 1388</li>
                     <li><a href="https://www.google.com/maps/@-25.7782302,29.4401676,15z?entry=ttu"
-                            target="_blank">📍Location
-                            Map</a></li>
+                            target="_blank">📍Location Map</a></li>
                 </ul>
             </div>
             <div class="social">
                 <a href="dummy.html" target="_blank">
-                    <img src="images/icon-facebook.webp" alt="fb icon">
+                    <img src="images/icon-facebook.webp" alt="fb icon" loading="lazy">
                 </a>
                 <a href="dummy.html" target="_blank">
-                    <img src="images/icons-twitterx.webp" alt="twitter icon">
+                    <img src="images/icons-twitterx.webp" alt="twitter icon" loading="lazy">
                 </a>
                 <a href="dummy.html" target="_blank">
-                    <img src="images/icon-linkedin.webp" alt="linkedin icon">
+                    <img src="images/icon-linkedin.webp" alt="linkedin icon" loading="lazy">
                 </a>
                 <a href="dummy.html" target="_blank">
-                    <img src="images/icon-github.webp" alt="github icon">
+                    <img src="images/icon-github.webp" alt="github icon" loading="lazy">
                 </a>
                 <a href="dummy.html" target="_blank">
-                    <img src="images/icon-whatsapp.webp" alt="whatsapp icon">
+                    <img src="images/icon-whatsapp.webp" alt="whatsapp icon" loading="lazy">
                 </a>
             </div>
             <div class="dev-info">
                 <span id="lastModified"></span> <br>&copy; <span id="year"> </span><span> | Terri de Breyn | South
-                    Africa | </span>
+                    Africa | WDD 230</span>
             </div>
-
-
-
         </footer>
     </body>
 

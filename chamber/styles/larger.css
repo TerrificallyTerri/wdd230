@@ -34,4 +34,16 @@
     button.event-details {
         left: 25%;
     }
+    /* Join Page */
+    .membership-benefit-application {
+        grid-column: 1;
+        grid-row: 1 / span 3;
+    }
+    .membership-benefit-table {
+        margin: 1rem auto auto auto;
+        display: flex;
+        grid-column: 2 / span 2;
+        grid-row: 1 ;
+        width: 100%;
+    }
 }

@@ -34,7 +34,6 @@ h3 {
     margin: 0;
     padding: 10px;
 }
-
 button {
     min-width: 75px;
     padding: 10px;
@@ -271,4 +270,131 @@ ul {
     bottom: 1px;
     color: white;
     margin: 0;
+}
+
+/* JOIN PAGE */
+
+.ma1 {
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+    max-width: 600px;
+    background-color: var(--accent1-color);
+    padding: 15px 15px 5px 15px;
+    border: 5px solid var(--primary-color)
+}
+.membership-benefit-application{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+.ma1 fieldset {
+    margin: 1rem auto auto auto;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.ma1 legend {
+    color: var(--primary-color);
+    font-size: large;
+    padding: 0 .5rem;
+}
+.ma1 label {
+    display: inline-block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    margin-left: 0;
+    text-align: left;
+}
+.ma1 input[type="text"],
+.ma1 input[type="email"],
+.ma1 input[type="tel"],
+.ma1 input[type="url"],
+.ma1 select,
+.ma1 textarea
+ {
+    border: solid 2px var(--secondary-color);
+    border-radius: 6px;
+    background-color: #0086e518;
+    width: 95%;
+    height: 44px;
+}
+.ma1 input[type="radio"] {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+.ma1 textarea {
+    overflow: hidden;
+    resize: none;
+}
+.ma1 input:required,
+.ma1 textarea:required {
+    border-left: 3px solid red;
+}
+.ma1 input:required:valid,
+.ma1 textarea:required:valid {
+    border-left: 10px solid green
+}
+.ma1 input[type="submit"] {
+    min-width: 160px;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-shadow: 1px 0.5px #242222;
+    margin: 2rem 0 2rem 0;
+}
+
+/* -----Table CSS----- */
+.membership-benefit-table {
+    display: none;
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+    margin: auto;
+    width: fit-content;
+    /* height: fit-content; */
+    }
+.mem-ben {
+    text-align: center;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+}
+caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-size: small;
+}
+.mem-ben thead tr th {
+    background-color: var(--secondary-color);
+    font-size: larger;
+    padding: 15px;
+}
+.mem-ben th{
+    background-color: var(--accent1-color);
+}
+th, td {
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    font-size: small;
+}
+tr:nth-child(even){
+    background-color: var(--accent1-color);
+}
+body.dark-mode tr:nth-child(odd) {
+    color: var(--accent1-color);
+}
+body.dark-mode .mem-ben th{
+    color: var(--primary-color);
+}
+body.dark-mode tr:nth-child(even) {
+    color: var(--primary-color);
 }
