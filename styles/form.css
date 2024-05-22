@@ -79,7 +79,7 @@ input[type="submit"] {
     border-radius: 4px;
 }
 input[type="submit"]:hover {
-    background-color: color1;
+    background-color: var(--color1);
 }
 #rangevalue {
     margin-bottom: 1rem;
