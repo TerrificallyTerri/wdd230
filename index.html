@@ -36,6 +36,9 @@
     <script defer src="scripts/hamburger.js"></script>
     <script defer src="scripts/darkmode.js"></script>
     <script defer src="scripts/visits.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/links.js"></script>
+    <!-- <script defer src="data/links.json"></script> -->
 
   </head>
 
@@ -73,57 +76,58 @@
       <h1>WDD 230: Web Frontend Development</h1>
       <section class="card">
         <h2>Learning Activities</h2>
-        <ul>
-          <li>
-            <span class="weeks">Week 1:</span>
-            <a class="activities-link" href="week01/holygrail.html" target="blank">Holy Grail</a>
-            <a class="activities-link" href="https://codepen.io/TerrificallyTerri/pen/BabWyYE" target="blank">JS
-              Codepen</a>
-            <a class="activities-link" href="week01/media-query.html" target="blank">Media Query</a>
-          </li>
-
-          <li>
-            <span class="weeks">Week 2:</span>
-            <a class="activities-link" href="week02/design.html" target="blank">Design Principles</a>
-            <a class="activities-link" href="https://codepen.io/TerrificallyTerri/pen/VwRMNOj" target="blank">Hamburger
-              CodePen</a>
-            <a class="activities-link" href="week02/bom.html" target="blank">BOM of DOM</a>
-          </li>
-          <li>
-            <span class="weeks">Week 3:</span>
-            <a class="activities-link" href="week03/images/landscape.webp" target="blank">WebP</a>
-            <a class="activities-link" href="week03/lazyload.html" target="blank">Lazy Loading</a>
-            <a class="activities-link" href="week03/responsive-images.html" target="blank">Responsive Images</a>
-            <a class="activities-link" href="week03/bom.html" target="blank">Web Storage - BOM Chapters</a>
-          </li>
-          <li>
-            <span class="weeks">Week 4:</span>
-            <a class="activities-link" href="https://codepen.io/TerrificallyTerri/pen/yLwvmEg"
-              target="blank">Pseudo-Class:CodePen</a>
-            <a class="activities-link" href="./week04/images/css-combinators-exercises.png" target="blank">CSS
-              Combinators</a>
-            <a class="activities-link" href="./week04/tablebuild.html" target="blank">Table Build</a>
-            <a class="activities-link" href="./week04/form-start/index.html" target="blank">Web Form</a>
-
-          </li>
-          <li>
-            <span class="weeks">Week 5:</span>
-            <a class="activities-link" href="https://codepen.io/TerrificallyTerri/pen/abMLmqg"
-              target="blank">Pseudo-Elements::CodePen</a>
-            <a class="activities-link" href="/week05/data/new-ward-members.json" target="blank">JSON New Ward
-              Members</a>
-            <a class="activities-link" href="week05/prophets.html" target="blank">Prophets</a>
-            <a class="activities-link" href="week05/weather.html" target="blank">Weather API</a>
-          </li>
-          <li>
-            <span class="weeks">Week 6:</span>
-            <a class="activities-link" href="#" target="blank">Loading...</a>
-          </li>
-        </ul>
+        <div class="activities">
+          <!-- <ul>
+            <li>
+              <span class="weeks">Week 1:</span>
+              <a class="activities-link" href="week01/holygrail.html" target="blank">Holy Grail</a>
+              <a class="activities-link" href="https://codepen.io/TerrificallyTerri/pen/BabWyYE" target="blank">JS
+                Codepen</a>
+              <a class="activities-link" href="week01/media-query.html" target="blank">Media Query</a>
+            </li>
+            <li>
+              <span class="weeks">Week 2:</span>
+              <a class="activities-link" href="week02/design.html" target="blank">Design Principles</a>
+              <a class="activities-link" href="https://codepen.io/TerrificallyTerri/pen/VwRMNOj"
+                target="blank">Hamburger
+                CodePen</a>
+              <a class="activities-link" href="week02/bom.html" target="blank">BOM of DOM</a>
+            </li>
+            <li>
+              <span class="weeks">Week 3:</span>
+              <a class="activities-link" href="week03/images/landscape.webp" target="blank">WebP</a>
+              <a class="activities-link" href="week03/lazyload.html" target="blank">Lazy Loading</a>
+              <a class="activities-link" href="week03/responsive-images.html" target="blank">Responsive Images</a>
+              <a class="activities-link" href="week03/bom.html" target="blank">Web Storage - BOM Chapters</a>
+            </li>
+            <li>
+              <span class="weeks">Week 4:</span>
+              <a class="activities-link" href="https://codepen.io/TerrificallyTerri/pen/yLwvmEg"
+                target="blank">Pseudo-Class:CodePen</a>
+              <a class="activities-link" href="./week04/images/css-combinators-exercises.png" target="blank">CSS
+                Combinators</a>
+              <a class="activities-link" href="./week04/tablebuild.html" target="blank">Table Build</a>
+              <a class="activities-link" href="./week04/form-start/index.html" target="blank">Web Form</a>
+            </li>
+            <li>
+              <span class="weeks">Week 5:</span>
+              <a class="activities-link" href="https://codepen.io/TerrificallyTerri/pen/abMLmqg"
+                target="blank">Pseudo-Elements::CodePen</a>
+              <a class="activities-link" href="/week05/data/new-ward-members.json" target="blank">JSON New Ward
+                Members</a>
+              <a class="activities-link" href="week05/prophets.html" target="blank">Prophets</a>
+              <a class="activities-link" href="week05/weather.html" target="blank">Weather API</a>
+            </li>
+            <li>
+              <span class="weeks">Week 6:</span>
+              <a class="activities-link" href="#" target="blank">Loading...</a>
+            </li>
+          </ul> -->
+        </div>
       </section>
       <section class="card">
         <h2>Information</h2>
-        <h3>Weather</h3>
+        <div id="weather"></div>
         <h3>Visits to Site:</h3>
         <span id="visits">
         </span>

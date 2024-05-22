@@ -1,15 +1,22 @@
 {
-    "lessons": [
+    "weeks": [
         {
-            "lesson": "Week 1",
+            "week": "Week 1",
             "links": [
                 {
-                    "url": "../lesson01/holygrail.html",
-                    "title": "Holy Grail Layout"
+                    "url": "../week01/holygrail.html",
+                    "title": "Holy Grail Layout",
+                    "target": "blank"
                 },
                 {
                     "url": "https://codepen.io/TerrificallyTerri/pen/BabWyYE",
-                    "title": "JS Codepen"
+                    "title": "JS Codepen",
+                    "target": "blank"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query",
+                    "target": "blank"
                 }
             ]
         },
@@ -17,12 +24,19 @@
             "week": "Week 2",
             "links": [
                 {
-                    "url": "../lesson02/media-query.html",
-                    "title": "Media Queries"
+                    "url": "..week02/design.html",
+                    "title": "Design Principles",
+                    "target": "blank"
                 },
                 {
-                    "url": "../lesson02/design-principles.html",
-                    "title": "Design Principles"
+                    "url": "https://codepen.io/TerrificallyTerri/pen/VwRMNOj",
+                    "title": "Hamburger CodePen",
+                    "target": "blank"
+                },
+                {
+                    "url": "../week02/bom.html",
+                    "title": "BOM of DOM",
+                    "target": "blank"
                 }
             ]
         },
@@ -30,21 +44,24 @@
             "week": "Week 3",
             "links": [
                 {
-                    "url": "../lesson02/images/css-combinators-exercises.png",
-                    "title": "CSS Combinators W3Schools"
+                    "url": "..week03/images/landscape.webp",
+                    "title": "WebP",
+                    "target": "blank"
                 },
                 {
-                    "url": "https://codepen.io/TerrificallyTerri/pen/abMLmqg",
-                    "title": "Pseudo-Elements::Codepen"
+                    "url": "../week03/lazyload.html",
+                    "title": "Lazy Loading",
+                    "target": "blank"
                 },
                 {
-                    "url": "https://codepen.io/TerrificallyTerri/pen/VwRMNOj",
-                    "title": "Hamburger Menu"
+                    "url": "../week03/responsive-images.html",
+                    "title": "Responsive Images",
+                    "target": "blank"
                 },
                 {
-                    "url": "../lesson03/chamber-site-plan.html",
-                    "title": "Chamber Site Plan",
-                    "target": "_blank"
+                    "url": "..week03/bom.html",
+                    "title": "Web Storage - BOM Chapters",
+                    "target": "blank"
                 }
             ]
         },
@@ -53,7 +70,23 @@
             "links": [
                 {
                     "url": "https://codepen.io/TerrificallyTerri/pen/yLwvmEg",
-                    "title": "Pseudo-Classes:Codepen"
+                    "title": "Pseudo-Classes:Codepen",
+                    "target": "blank"
+                },
+                {
+                    "url": "https://codepen.io/TerrificallyTerri/pen/yLwvmEg",
+                    "title": "CSS Combinators",
+                    "target": "blank"
+                },
+                {
+                    "url": ".../week04/tablebuild.html",
+                    "title": "Table Build",
+                    "target": "blank"
+                },
+                {
+                    "url": "../week04/form-start/index.html",
+                    "title": "Web Form",
+                    "target": "blank"
                 }
             ]
         },
@@ -61,8 +94,20 @@
             "week": "Week 5",
             "links": [
                 {
-                    "url": "../lesson05/bom.html",
-                    "title": "BOM JS App"
+                    "url": "https://codepen.io/TerrificallyTerri/pen/abMLmqg",
+                    "title": "Pseudo-Elements::CodePen"
+                },
+                {
+                    "url": "../week05/data/new-ward-members.json",
+                    "title": "JSON New Ward Members"
+                },
+                {
+                    "url": "../week05/prophets.html",
+                    "title": "Prophets"
+                },
+                {
+                    "url": "../week05/weather.html",
+                    "title": "Weather API"
                 }
             ]
         },
@@ -70,56 +115,8 @@
             "week": "Week 6",
             "links": [
                 {
-                    "url": "../lesson05/images/landscape.webp",
-                    "title": "WebP"
-                },
-                {
-                    "url": "../lesson06/responsive-images.html",
-                    "title": "Responsive Images"
-                }
-            ]
-        },
-        {
-            "week": "Week 7",
-            "links": [
-                {
-                    "url": "../lesson07/lazyload.html",
-                    "title": "Lazy Loading"
-                }
-            ]
-        },
-        {
-            "lesson": "08",
-            "links": [
-                {
-                    "url": "../lesson08/tablebuild.html",
-                    "title": "Table Build"
-                },
-                {
-                    "url": "../lesson08/form-start/index.html",
-                    "title": "Form Build"
-                }
-            ]
-        },
-        {
-            "lesson": "09",
-            "links": [
-                {
-                    "url": "..//lesson09/new-ward-members.json",
-                    "title": "JSON"
-                },
-                {
-                    "url": "../lesson09/prophets.html",
-                    "title": "Prophets"
-                }
-            ]
-        },
-        {
-            "lesson": "10",
-            "links": [
-                {
-                    "url": "../lesson10/weather.html",
-                    "title": "Weather API"
+                    "url": "#",
+                    "title": "Loading..."
                 }
             ]
         }
