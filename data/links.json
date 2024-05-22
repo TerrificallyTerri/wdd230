@@ -24,7 +24,7 @@
             "week": "Week 2",
             "links": [
                 {
-                    "url": ".week02/design.html",
+                    "url": "week02/design.html",
                     "title": "Design Principles",
                     "target": "blank"
                 },
@@ -59,7 +59,7 @@
                     "target": "blank"
                 },
                 {
-                    "url": ".week03/bom.html",
+                    "url": "week03/bom.html",
                     "title": "Web Storage - BOM Chapters",
                     "target": "blank"
                 }
@@ -79,7 +79,7 @@
                     "target": "blank"
                 },
                 {
-                    "url": "../week04/tablebuild.html",
+                    "url": "/week04/tablebuild.html",
                     "title": "Table Build",
                     "target": "blank"
                 },
@@ -116,7 +116,7 @@
             "links": [
                 {
                     "url": "#",
-                    "title": "Loading.."
+                    "title": "Still Loading.."
                 }
             ]
         }
