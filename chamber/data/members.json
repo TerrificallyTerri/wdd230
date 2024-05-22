@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+            "name": "Armada",
+            "address": "32 John Magagula Street, Middelburg ",
+            "phone": "013 656 1209",
+            "website": "https://www.armadaaccountants.co.za/",
+            "image": "images/logo-armada.webp",
+            "membership_level": "Gold",
+            "other_info": "Armada Business Accountants is a 100% female black owned company. We offer our clients comprehensive range of services to best suit their needs."
+        },
+        {
+            "name": "Corn & Cob",
+            "address": "Kopermyn Farm, Middelburg ",
+            "phone": "082 388 3512",
+            "website": "https://www.cornandcob.co.za/",
+            "image": "images/logo-corn.webp",
+            "membership_level": "Silver",
+            "other_info": "Elegant country charm and manicured gardens. Beautifully kept stables and fields where horses roam free. Creating the perfect backdrop for any occasion."
+        },
+        {
+            "name": "Bolt and Engineering",
+            "address": "11 Newton Street, Middelburg ",
+            "phone": "013 243 3499",
+            "website": "https://bolteng.co.za/branches/middelburg/",
+            "image": "images/logo-bolt.webp",
+            "membership_level": "Bronze",
+            "other_info": "Bolt and Engineering Distributors (B.E.D.) supplies a comprehensive range of locally produced and imported equipment and consumables."
+        },
+        {
+            "name": "ENPROTEC",
+            "address": "13 Insimbi Street, Middelburg ",
+            "phone": "013 246 1399",
+            "website": "https://enprotec.com/",
+            "image": "images/logo-enprotec.webp",
+            "membership_level": "Bronze",
+            "other_info": "To be a leading engineering applications group that enables better, greener mineral processing plants for clients across the globe."
+        },
+        {
+            "name": "Seef Properties",
+            "address": "35 Dolerite Cresent, Middelburg ",
+            "phone": "013 244 1507",
+            "website": "https://www.seefproperties.co.za/",
+            "image": "images/logo-seef.webp",
+            "membership_level": "Gold",
+            "other_info": "Our team takes pride in our association with the Seeff brand and our experienced and highly trained Sales and Rental agents provide smart and astute advice to our clients."
+        },
+        {
+            "name": "Medo Enterprise Development",
+            "address": "292 Walter Sisulu Street, Middelburg ",
+            "phone": "013 243 2023",
+            "website": "https://me-do.co.za/",
+            "image": "images/logo-medo.webp",
+            "membership_level": "Gold",
+            "other_info": "Our strategized approach is hassle and stress-free for the client. It is important to note that to date, we have only successfully validated BBBEE projects (only accept affirmative action) to ensure optimum BBBEE points."
+        },
+        {
+            "name": "Steve Tshwete Municipality",
+            "address": "Cnr Walter Sisulu Street & Wanderers Avenue, Middelburg ",
+            "phone": "013 249 7000",
+            "website": "https://stlm.gov.za",
+            "image": "images/logo-stlm.webp",
+            "membership_level": "Gold",
+            "other_info": "One of the top Municipalities in South Africa. It is a progressive and flourishing Municipality with world-class infrastructure. Ideally located for optimal business exposure."
+        },
+        {
+            "name": "Shockwave",
+            "address": "Shop 6, Cycad Place, Cnr Lilian Ngoyi & Cowen Ntuli Street, Middelburg ",
+            "phone": "013 243 7179",
+            "website": "https://shockwavemusic.co.za/",
+            "image": "images/logo-shockwave.webp",
+            "membership_level": "Bronze",
+            "other_info": "We stock only the best! From harmonica’s to digital pianos, guitars to drums and speakers to custom cables. We can also repair instruments while you wait! (depending on how badly you broke your guitar at last night’s gig!"
+        }
+    ]
+}

@@ -395,3 +395,67 @@ body.dark-mode .mem-ben th{
 body.dark-mode tr:nth-child(even) {
     color: var(--primary-color);
 }
+/* directory */
+.list{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+}
+.list li {
+    color: var(--primary-color);
+    border-radius: 5px;
+    margin: 8px;
+    transition: 1s;
+    background-color: var(--accent1-color);
+    border: 3px solid var(--secondary-color);
+}
+/* List view */
+.list-view-filter {
+    flex-direction: column;
+    font-size: clamp(0.75rem, 0.577rem + 0.923vw, 1.5rem);
+}
+
+.list-view-filter li {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+}
+.list-view-filter .member-logo,
+.list-view-filter .other-info {
+    display: none;
+}
+.list-view-filter .member-name {
+    font-size: clamp(1.125rem, 0.808rem + 1.692vw, 2.5rem);
+    grid-row: span 2;
+}
+
+
+/* grid view */
+.grid-view-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 1000px;
+}
+.grid-view-filter li {
+    width: 300px;
+    text-align: center;
+    
+}
+.grid-view-filter .member-logo{
+    padding-top: 10px;
+}
+.grid-view-filter .address {
+    font-size: small;
+}
+.grid-view-filter .other-info{
+    font-size: small;
+    line-height: 22px;
+    text-align: justify;
+    padding: 0 15px 0 15px;
+}
