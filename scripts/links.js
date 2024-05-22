@@ -36,6 +36,7 @@ const displayActivities = (weeks) => {
             } else {
                 anchorTag.href = `${baseURL}/${anchor.url}`;
             }
+            anchorTag.target = `${anchor.target}`
             // attach to the parents
             list.appendChild(weekItem);
             weekItem.appendChild(span);
