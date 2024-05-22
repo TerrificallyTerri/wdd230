@@ -2,11 +2,11 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-// const url = 'https:api.openweathermap.org/data/2.5/weather?lat=49.5&lon=6.64&appid=3a3e43bafe7ebe44d2787a69cae22297&units=metric';
+const url = "https:api.openweathermap.org/data/2.5/weather?lat=49.5&lon=6.64&appid=3a3e43bafe7ebe44d2787a69cae22297&units=metric";
 
 async function apiFetch() {
     try {
-        const response = await fetch('https:api.openweathermap.org/data/2.5/weather?lat=49.5&lon=6.64&appid=3a3e43bafe7ebe44d2787a69cae22297&units=metric');
+        const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
             console.log(data);
