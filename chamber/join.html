@@ -62,23 +62,27 @@
                     <form class="ma1" action="thankyou.html" method="get">
                         <fieldset>
                             <legend>Applicant Information</legend>
-                            <label>First Name* <input type="text" name="app-fname" pattern="[a-zA-Z-]" required></label>
-                            <label>Last Name* <input type="text" name="app-lname" pattern="[a-zA-Z-]" required></label>
-                            <label>Official Position* <input type="text" name="app-lname" required
-                                    pattern="[a-zA-Z\s-]{7,}" placeholder="Please enter your current position"></label>
-                            <label>Email Address* <input type="email" name="app-email" placeholder="name@business.com"
+                            <label>First Name* <input type="text" id="first-name" name="app-fname" pattern="[a-zA-Z-]"
                                     required></label>
-                            <label>Personal Phone <input type="tel" name="app-phone" placeholder="0123456789"></label>
+                            <label>Last Name* <input type="text" id="last-name" name="app-lname" pattern="[a-zA-Z-]"
+                                    required></label>
+                            <label>Official Position* <input type="text" id="position" name="position" required
+                                    pattern="[a-zA-Z\s-]{7,}" placeholder="Please enter your current position"></label>
+                            <label>Email Address* <input type="email" id="email" name="app-email"
+                                    placeholder="name@business.com" required></label>
+                            <label>Personal Phone <input type="tel" id="tel" name="app-phone"
+                                    placeholder="0123456789"></label>
                         </fieldset>
                         <fieldset>
                             <legend>Business Information</legend>
-                            <label>Trading Name* <input type="text" name="trade-name" pattern="[a-zA-Z0-9]+"
-                                    required></label>
-                            <label>Registration Number* <input type="text" name="registration" pattern="[a-zA-Z0-9]+"
-                                    required></label>
-                            <label>Company Website Address <input type="url" name="url" placeholder="http://"></label>
+                            <label>Trading Name* <input type="text" id="bus-name" name="trade-name"
+                                    pattern="[a-zA-Z0-9]+" required></label>
+                            <label>Registration Number* <input type="text" id="reg-num" name="registration"
+                                    pattern="[a-zA-Z0-9]+" required></label>
+                            <label>Company Website Address <input type="url" id="web-address" name="url"
+                                    placeholder="http://"></label>
                             <label>Areas of Sevice
-                                <select name="service-area">
+                                <select name="service-area" id="locations">
                                     <option value="">Please Select &#9662;</option>
                                     <option value="alberton">Alberton</option>
                                     <option value="arnot">Arnot</option>
@@ -97,20 +101,24 @@
                                     <option value="ogies">Ogies</option>
                                 </select>
                             </label>
-                            <label>Business Description* <textarea name="bus-description" cols="30" rows="3"
-                                    required></textarea></label>
+                            <label>Business Description* <textarea name="bus-description" id="bus-description" cols="30"
+                                    rows="3" required></textarea></label>
                         </fieldset>
                         <fieldset>
                             <legend>Membership Level</legend>
-                            <label><input type="radio" name="membership" value="npmember" required> Non-Profit
+                            <label><input type="radio" name="membership" id="npmember" value="npmember" required>
+                                Non-Profit
                                 Membership</label>
-                            <label><input type="radio" name="membership" value="bronze-member"> Bronze
+                            <label><input type="radio" name="membership" id="bronze-member" value="bronze-member">
+                                Bronze
                                 Membership</label>
-                            <label><input type="radio" name="membership" value="npmember"> Silver Membership</label>
-                            <label><input type="radio" name="membership" value="npmember"> Gold Membership</label>
+                            <label><input type="radio" name="membership" id="silver-member" value="silver-member">
+                                Silver Membership</label>
+                            <label><input type="radio" name="membership" id="gold-member" value="gold-member"> Gold
+                                Membership</label>
                         </fieldset>
                         <input type="hidden" id="submit-time" name="submit-time">
-                        <input type="submit" value="Apply for My Benefits">
+                        <input type="submit" id="submit" value="Apply for My Benefits">
                     </form>
                 </div>
                 <div class="membership-benefit-table">
