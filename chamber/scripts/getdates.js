@@ -9,4 +9,4 @@ let date = fullDate.toLocaleDateString();
 let time = fullDate.toLocaleTimeString();
 console.log(date);
 
-document.getElementById("lastModified").innerHTML = `Last Modified: ${date}, ${time}`;
+document.getElementById("lastModified").innerHTML = `Last Loaded: ${date}, ${time}`;
