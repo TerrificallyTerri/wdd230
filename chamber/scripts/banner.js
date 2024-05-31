@@ -1,5 +1,5 @@
 const banner = document.getElementById('banner');
-const today = new Date().getDay();
+const today = 2 //new Date().getDay();
 console.log("Today", today);
 
 function createBanner() {
