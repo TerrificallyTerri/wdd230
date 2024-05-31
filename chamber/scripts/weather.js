@@ -60,7 +60,6 @@ function displayResults(data, forecastList) {
     if (index === 0) {
       const day = document.createElement("p");
       day.textContent = `Today: ${toDateString(forecast)}`;
-      console.log("check line 71", day);
       todayFC.appendChild(day);
 
       const imageSource = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
