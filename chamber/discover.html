@@ -1,219 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Middelburg Chamber of Commerce Discover</title>
-        <meta name="author" content="Terri de Breyn">
-        <meta name="description" content="Middelburg Chamber of Commerce
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Middelburg Chamber of Commerce Discover</title>
+    <meta name="author" content="Terri de Breyn" />
+    <meta
+      name="description"
+      content="Middelburg Chamber of Commerce
                     Provide details about Midddelburg
                     Middelburg Mpumalanga
                     Investment
-                    Opportunity">
-        <!--  Essential META Tags -->
-        <meta property="og:title" content="Middelburg Investment Chamber">
-        <meta property="og:type" content="website">
-        <meta property="og:image"
-            content="https://www.pamgolding.co.za/Uploads/areaguides/2d97e116-b7c1-4fdf-80a4-74e9bdc62003/Header/middelburg-area-guide.jpg">
-        <meta property="og:url" content="https://terrificallyterri.github.io/wdd230/chamber">
-        <link rel="icon" href="images/favicon.ico">
+                    Opportunity"
+    />
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Middelburg Investment Chamber" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.pamgolding.co.za/Uploads/areaguides/2d97e116-b7c1-4fdf-80a4-74e9bdc62003/Header/middelburg-area-guide.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://terrificallyterri.github.io/wdd230/chamber"
+    />
+    <link rel="icon" href="images/favicon.ico" />
 
-        <!-- Style Sheet references -->
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/larger.css">
+    <!-- Style Sheet references -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
 
-        <!-- text links -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap"
-            rel="stylesheet">
+    <!-- text links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- JS script links -->
-        <script defer src="scripts/getdates.js"></script>
-        <script defer src="scripts/discovery.js"></script>
-        <script defer src="scripts/buttons.js"></script>
-    </head>
+    <!-- JS script links -->
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/discovery.js"></script>
+    <script defer src="scripts/buttons.js"></script>
+  </head>
 
-    <body>
-        <header>
-            <img class="logo-img" src="images/chamber-first-logo6.webp" alt="Middelburg Chamber of Commerce 
-                            Logo">
-            <h1>Middelburg Chamber Of Commerce</h1>
-            <button id="menu">≡</button>
-        </header>
-        <nav class="navigation">
-            <a class="active" href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join the Chamber</a>
-        </nav>
-        <main>
-            <div class="spacer"></div>
-            <div class="main-grid">
-                <div class="left-col">
-                    <div class="visitor-info">
-                        <h3>Activity</h3>
-                        <div class="content">
-                            <p id="last-visit"></p>
-                            <p id="visits"></p>
-                        </div>
-                    </div>
-                    <div class="venues">
-                        <h3>Venues Available</h3>
-                        <div class="accordion-card">
-                            <button class="accordion">Executive Boardroom</button>
-                            <div class="panel">
-                                <img src="images/venue1.webp" alt="Executive Boardroom" loading="lazy" width="300"
-                                    height="300">
-                            </div>
-                        </div>
-                        <div class="accordion-card">
-                            <button class="accordion">Conference Room 1 </button>
-                            <div class="panel">
-                                <img src="images/venue2.webp" alt="Large Conference Room" loading="lazy" width="300"
-                                    height="300">
-                            </div>
-                        </div>
-                        <div class="accordion-card">
-                            <button class="accordion">Conference Room 2</button>
-                            <div class="panel">
-                                <img src="images/venue3.webp" alt="Smaller Conference Room" loading="lazy" width="300"
-                                    height="300">
-                            </div>
-                        </div>
-                        <div class="accordion-card">
-                            <button class="accordion">Lecture Hall</button>
-                            <div class="panel">
-                                <img src="images/venue5.webp" alt="Lecture Hall" loading="lazy" width="300"
-                                    height="300">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="locals">
-                    <h2>Local Discovery</h2>
-                    <div class="local-cards-container">
-                        <div class="local-cards">
-                            <picture>
-                                <source media="(max-width: 800px)" srcset="images/alzu-rhinos-small.webp">
-                                <img src="images/alzu-rhinos-large.webp" alt="Alzu Rhinos" loading="lazy" width="1200"
-                                    height="600">
-                            </picture>
-                            <div class="caption">
-                                <p class="cap-text">Big Five Viewing at Alzu Petroport</p>
-                            </div>
-                        </div>
-                        <div class="local-cards">
-                            <picture>
-
-                                <source media="(max-width: 800px)" srcset="images/loskop-dam-small.webp">
-
-                                <img src="images/loskop-dam-large.webp" alt="Loskop Dam" loading="lazy" width="1200"
-                                    height="600">
-                            </picture>
-                            <div class="caption">
-                                <p class="cap-text">Heroic Historic Workmanship of Loskop Dam</p>
-                            </div>
-                        </div>
-                        <div class="local-cards">
-                            <picture>
-
-                                <source media="(max-width: 800px)" srcset="images/ndebele-tribal-village-small.webp">
-
-                                <img src="images/ndebele-tribal-village-large.webp" alt="Ndebele house with painting"
-                                    loading="lazy" width="1200" height="600">
-                            </picture>
-                            <div class="caption">
-                                <p class="cap-text">Art as Expression on Ndebele Homes</p>
-                            </div>
-                        </div>
-                        <div class="local-cards">
-                            <picture>
-
-                                <source media="(max-width: 800px)" srcset="images/kitchener-house-small.webp">
-
-                                <img src="images/kitchener-house-large.webp" alt="Lord Kitchener's House" loading="lazy"
-                                    width="1200" height="600">
-                            </picture>
-                            <div class="caption">
-                                <p class="cap-text">Lord Kitchener's Command Base</p>
-                            </div>
-                        </div>
-                        <div class="local-cards">
-                            <picture>
-                                <source media="(max-width: 500px)"
-                                    srcset="images/concentration-camp-childrens-graves-smallest.webp">
-                                <source media="(max-width: 800px)"
-                                    srcset="images/concentration-camp-childrens-graves-small.webp">
-                                <source media="(max-width: 1100px)"
-                                    srcset="images/concentration-camp-childrens-graves-large.webp">
-                                <img src="images/concentration-camp-childrens-graves-large.webp"
-                                    alt="Graves of children who died in the concentration camps" loading="lazy"
-                                    width="1200" height="600">
-                            </picture>
-                            <div class="caption">
-                                <p class="cap-text">Graves of Middleburg's Concentration Camp Children</p>
-                            </div>
-                        </div>
-                        <div class="local-cards">
-                            <picture>
-                                <source media="(max-width: 500px)" srcset="images/mall-smallest.webp">
-                                <source media="(max-width: 800px)" srcset="images/mall-small.webp">
-                                <source media="(max-width: 1100px)" srcset="images/mall-large.webp">
-                                <img src="images/mall-large.webp" alt="Middelburg Mall" loading="lazy" width="1200"
-                                    height="600">
-                            </picture>
-                            <div class="caption">
-                                <p class="cap-text">All You Want Materialism at Middelburg Mall</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <body>
+    <header>
+      <img
+        class="logo-img"
+        src="images/chamber-first-logo6.webp"
+        alt="Middelburg Chamber of Commerce 
+                            Logo"
+      />
+      <h1>Middelburg Chamber Of Commerce</h1>
+      <button id="menu">≡</button>
+    </header>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join the Chamber</a>
+    </nav>
+    <main>
+      <div class="spacer"></div>
+      <div class="main-grid">
+        <div class="left-col">
+          <div class="visitor-info">
+            <h3>Activity</h3>
+            <div class="content">
+              <p id="last-visit"></p>
+              <p id="visits"></p>
             </div>
-        </main>
-        <footer>
-            <div class="chamber">
-                <img class="logo-img" src="images/chamber-first-logo6.webp" alt="chamber-logo" loading="lazy">
-                <ul>
-                    <li>Middelburg Chamber of Commerce</li>
-                    <li>292 Walter Sisulu Drive</li>
-                    <li>Middelburg</li>
-                    <li>South Africa</li>
-                </ul>
-                <ul>
-                    <li>Contact:</li>
-                    <li>Email: info@mdb.org</li>
-                    <li>Telephone: +2713 246 1388</li>
-                    <li><a href="https://www.google.com/maps/@-25.7782302,29.4401676,15z?entry=ttu"
-                            target="_blank">📍Location
-                            Map</a></li>
-                </ul>
+          </div>
+          <div class="venues">
+            <h3>Venues Available</h3>
+            <div class="accordion-card">
+              <button class="accordion">Executive Boardroom</button>
+              <div class="panel">
+                <img
+                  src="images/venue1.webp"
+                  alt="Executive Boardroom"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
+              </div>
             </div>
-            <div class="social">
-                <a href="dummy.html" target="_blank">
-                    <img src="images/icon-facebook.webp" alt="fb icon" loading="lazy">
-                </a>
-                <a href="dummy.html" target="_blank">
-                    <img src="images/icons-twitterx.webp" alt="twitter icon" loading="lazy">
-                </a>
-                <a href="dummy.html" target="_blank">
-                    <img src="images/icon-linkedin.webp" alt="linkedin icon" loading="lazy">
-                </a>
-                <a href="dummy.html" target="_blank">
-                    <img src="images/icon-github.webp" alt="github icon" loading="lazy">
-                </a>
-                <a href="dummy.html" target="_blank">
-                    <img src="images/icon-whatsapp.webp" alt="whatsapp icon" loading="lazy">
-                </a>
+            <div class="accordion-card">
+              <button class="accordion">Conference Room 1</button>
+              <div class="panel">
+                <img
+                  src="images/venue2.webp"
+                  alt="Large Conference Room"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
+              </div>
             </div>
-            <div class="dev-info">
-                <span id="lastModified"></span> <br>&copy; <span id="year"> </span><span> | Terri de Breyn | South
-                    Africa | WDD 230</span>
+            <div class="accordion-card">
+              <button class="accordion">Conference Room 2</button>
+              <div class="panel">
+                <img
+                  src="images/venue3.webp"
+                  alt="Smaller Conference Room"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
+              </div>
             </div>
-        </footer>
-    </body>
+            <div class="accordion-card">
+              <button class="accordion">Lecture Hall</button>
+              <div class="panel">
+                <img
+                  src="images/venue5.webp"
+                  alt="Lecture Hall"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="locals">
+          <h2>Local Discovery</h2>
+          <div class="local-cards-container">
+            <div class="local-cards">
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/alzu-rhinos-small.webp"
+                />
+                <img
+                  src="images/alzu-rhinos-large.webp"
+                  alt="Alzu Rhinos"
+                  loading="lazy"
+                  width="1200"
+                  height="600"
+                />
+              </picture>
+              <div class="caption">
+                <p class="cap-text">Big Five Viewing at Alzu Petroport</p>
+              </div>
+            </div>
+            <div class="local-cards">
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/loskop-dam-small.webp"
+                />
 
+                <img
+                  src="images/loskop-dam-large.webp"
+                  alt="Loskop Dam"
+                  loading="lazy"
+                  width="1200"
+                  height="600"
+                />
+              </picture>
+              <div class="caption">
+                <p class="cap-text">
+                  Heroic Historic Workmanship of Loskop Dam
+                </p>
+              </div>
+            </div>
+            <div class="local-cards">
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/ndebele-tribal-village-small.webp"
+                />
+
+                <img
+                  src="images/ndebele-tribal-village-large.webp"
+                  alt="Ndebele house with painting"
+                  loading="lazy"
+                  width="1200"
+                  height="600"
+                />
+              </picture>
+              <div class="caption">
+                <p class="cap-text">Art as Expression on Ndebele Homes</p>
+              </div>
+            </div>
+            <div class="local-cards">
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/kitchener-house-small.webp"
+                />
+
+                <img
+                  src="images/kitchener-house-large.webp"
+                  alt="Lord Kitchener's House"
+                  loading="lazy"
+                  width="1200"
+                  height="600"
+                />
+              </picture>
+              <div class="caption">
+                <p class="cap-text">Lord Kitchener's Command Base</p>
+              </div>
+            </div>
+            <div class="local-cards">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="
+                    images/concentration-camp-childrens-graves-smallest.webp
+                  "
+                />
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/concentration-camp-childrens-graves-small.webp"
+                />
+                <source
+                  media="(max-width: 1100px)"
+                  srcset="images/concentration-camp-childrens-graves-large.webp"
+                />
+                <img
+                  src="images/concentration-camp-childrens-graves-large.webp"
+                  alt="Graves of children who died in the concentration camps"
+                  loading="lazy"
+                  width="1200"
+                  height="600"
+                />
+              </picture>
+              <div class="caption">
+                <p class="cap-text">
+                  Graves of Middleburg's Concentration Camp Children
+                </p>
+              </div>
+            </div>
+            <div class="local-cards">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/mall-smallest.webp"
+                />
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/mall-small.webp"
+                />
+                <source
+                  media="(max-width: 1100px)"
+                  srcset="images/mall-large.webp"
+                />
+                <img
+                  src="images/mall-large.webp"
+                  alt="Middelburg Mall"
+                  loading="lazy"
+                  width="1200"
+                  height="600"
+                />
+              </picture>
+              <div class="caption">
+                <p class="cap-text">
+                  All You Want Materialism at Middelburg Mall
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="chamber">
+        <img
+          class="logo-img"
+          src="images/chamber-first-logo6.webp"
+          alt="chamber-logo"
+          loading="lazy"
+        />
+        <ul>
+          <li>Middelburg Chamber of Commerce</li>
+          <li>292 Walter Sisulu Drive</li>
+          <li>Middelburg</li>
+          <li>South Africa</li>
+        </ul>
+        <ul>
+          <li>Contact:</li>
+          <li>Email: info@mdb.org</li>
+          <li>Telephone: +2713 246 1388</li>
+          <li>
+            <a
+              href="https://www.google.com/maps/@-25.7782302,29.4401676,15z?entry=ttu"
+              target="_blank"
+              >📍Location Map</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <a href="dummy.html" target="_blank">
+          <img src="images/icon-facebook.webp" alt="fb icon" loading="lazy" />
+        </a>
+        <a href="dummy.html" target="_blank">
+          <img
+            src="images/icons-twitterx.webp"
+            alt="twitter icon"
+            loading="lazy"
+          />
+        </a>
+        <a href="dummy.html" target="_blank">
+          <img
+            src="images/icon-linkedin.webp"
+            alt="linkedin icon"
+            loading="lazy"
+          />
+        </a>
+        <a href="dummy.html" target="_blank">
+          <img src="images/icon-github.webp" alt="github icon" loading="lazy" />
+        </a>
+        <a href="dummy.html" target="_blank">
+          <img
+            src="images/icon-whatsapp.webp"
+            alt="whatsapp icon"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <div class="dev-info">
+        <span id="lastModified"></span> <br />&copy; <span id="year"> </span
+        ><span> | Terri de Breyn | South Africa | WDD 230</span>
+      </div>
+    </footer>
+  </body>
 </html>
