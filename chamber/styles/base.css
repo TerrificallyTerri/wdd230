@@ -205,6 +205,9 @@ button.event-details {
     flex-direction: column;
     gap: 10px;
 }
+h5 {
+    margin: 0.5rem;
+}
 .members {
     display: flex;
     flex-direction: column;
