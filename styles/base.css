@@ -150,6 +150,10 @@ nav a:hover{
     top: 1px;
     width: 100%;
     opacity: 0.75;
+    font-size: clamp(1rem, 1vw + 0.75rem, 2rem);
+    color: var(--color1);
+    background-color: var(--color4);
+    text-align: center;
 }
 main {
     display: grid;
