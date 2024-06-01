@@ -10,7 +10,7 @@ async function apiFetch() {
     );
     if (response.ok) {
       const data = await response.json();
-      console.table(data);
+      // console.table(data);
       createList(data);
       displayResults(data, forecastList);
     } else {
@@ -68,7 +68,8 @@ function displayResults(data, forecastList) {
       image.setAttribute("alt", "Weather Icon");
       todayFC.appendChild(image);
 
-      const temp = document.createElement("h5");
+      const temp = document.createElement("p");
+      temp.classList.add('temp')
       temp.textContent = `${forecast.main.temp}°C`;
       todayFC.appendChild(temp);
 
@@ -82,11 +83,12 @@ function displayResults(data, forecastList) {
       card.classList.add("future-card");
       futureDays.appendChild(card);
 
-      const temp = document.createElement("h5");
+      const temp = document.createElement("p");
+      temp.classList.add('temp');
       temp.textContent = `${forecast.main.temp}°C`;
       card.appendChild(temp);
 
-      const day = document.createElement("span");
+      const day = document.createElement("p");
       const thing = toDateString(forecast);
       day.textContent = `${thing}`;
       card.appendChild(day);
@@ -107,7 +109,7 @@ function toDateString(forecast) {
 }
 
 apiFetch();
-console.log(forecastList);
+// console.log(forecastList);
 
 function capitalization(str) {
   return str.replace(/\b\w/g, function (char) {

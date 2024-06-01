@@ -38,6 +38,7 @@
     <script defer src="scripts/weather.js"></script>
     <script defer src="scripts/buttons.js"></script>
     <script defer src="scripts/banner.js"></script>
+    <script defer src="scripts/member-adds.js"></script>
   </head>
 
   <body>
@@ -64,29 +65,28 @@
         <picture class="mySlides">
           <source media="(max-width: 450px)" srcset="images/art-small.webp">
           <source media="(max-width: 770px)" srcset="images/art-medium.webp">
-          <img src="images/art-large.webp" alt="Dr Esther Mahlangu and Ndebele designed BMW" width="1280" height="720">
+          <img src="images/art-large.webp" alt="Dr Esther Mahlangu and Ndebele designed BMW">
         </picture>
         <picture class="mySlides">
           <source media="(max-width: 450px)" srcset="images/field-of-maize-small.webp">
           <source media="(max-width: 770px)" srcset="images/field-of-maize-medium.webp">
-          <img src="images/field-of-maize-large.webp" alt="Rich farmlands around Middelburg" width="1280" height="720">
+          <img src="images/field-of-maize-large.webp" alt="Rich farmlands around Middelburg" loading="lazy">
         </picture>
         <picture class="mySlides">
           <source media="(max-width: 450px)" srcset="images/mines-small.webp">
           <source media="(max-width: 770px)" srcset="images/mines-medium.webp">
-          <img src="images/mines-large.webp" alt="Mining industry Mine workers on ore processing plant" width="1280"
-            height="720">
+          <img src="images/mines-large.webp" alt="Mining industry Mine workers on ore processing plant" loading="lazy">
         </picture>
         <picture class="mySlides">
           <source media="(max-width: 450px)" srcset="images/stainless-steel-small.webp">
           <source media="(max-width: 770px)" srcset="images/stainless-steel-medium.webp">
-          <img src="images/stainless-steel-large.webp" alt="Stainless Steel production" width="1280" height="720">
+          <img src="images/stainless-steel-large.webp" alt="Stainless Steel production" loading="lazy">
         </picture>
         <picture class="mySlides">
           <source media="(max-width: 450px)" srcset="images/powerstation-small.webp">
           <source media="(max-width: 770px)" srcset="images/powerstation-medium.webp">
           <img src="images//powerstation-large.webp" alt="Duvah Power Station with Bonsmara cattle in the foreground"
-            width="1280" height="720">
+            loading="lazy">
         </picture>
       </div>
 
@@ -99,28 +99,31 @@
             <div class="card-content">
               <h3>121<sup>st</sup>Annual Banquet</h3>
               <picture class="card-img">
-                <img src="images/banquet-2024.webp" alt="Annual Banquet" loading="lazy">
+                <img src="images/banquet-2024.webp" alt="Annual Banquet" loading="lazy" width="350" height="350">
               </picture>
               <button class="event-details">Event Details</button>
             </div>
             <div class="card-content">
               <h3>2024 MCCI Golf Day</h3>
               <picture class="card-img">
-                <img src="images/golfday.webp" alt="Close-up of golf ball on green" loading="lazy">
+                <img src="images/golfday.webp" alt="Close-up of golf ball on green" loading="lazy" width="350"
+                  height="350">
               </picture>
               <button class="event-details">Event Details</button>
             </div>
             <div class="card-content">
               <h3>Business Buzzer Day</h3>
               <picture class="card-img">
-                <img src="images/buzz.webp" alt="Collaboration of Business people" loading="lazy">
+                <img src="images/buzz.webp" alt="Collaboration of Business people" loading="lazy" width="350"
+                  height="350">
               </picture>
               <button class="event-details">Event Details</button>
             </div>
             <div class="card-content">
               <h3>Women's Day Event</h3>
               <picture class="card-img">
-                <img src="images/womens-day.webp" alt="Celebration of women's day event" loading="lazy">
+                <img src="images/womens-day.webp" alt="Celebration of women's day event" loading="lazy" width="350"
+                  height="350">
               </picture>
               <button class="event-details">Event Details</button>
             </div>
@@ -128,33 +131,9 @@
         </div>
 
         <div class="weather">
-          <h2 class="weather-header">Weather</h2>
-          <div class="weather-card">
-            <p>Temperature: <span id="temp">...</span> °F</p>
-            <p>Wind Speed: <span id="speed">...</span> mph</p>
-            <p>Wind Chill: <span id="windChill">Calculating ...</span> °F</p>
-          </div>
         </div>
 
         <div class="members">
-          <h2>Proud Chamber Members</h2>
-          <div class="mem-row">
-            <div class="mem-col">
-              <img src="images/logo-armada.webp" alt="Armada Logo" loading="lazy">
-              <img src="images/logo-bolt.webp" alt="Bolt Logo" loading="lazy">
-              <img src="images/logo-lodge.webp" alt="Lodge Logo" loading="lazy">
-              <img src="images/logo-project.webp" alt="Project Logo" loading="lazy">
-              <img src="images/logo-seef.webp" alt="Seef Logo" loading="lazy">
-            </div>
-            <div class="mem-col">
-              <img src="images/logo-corn.webp" alt="Resturant Logo" loading="lazy">
-              <img src="images/logo-makelaars.webp" alt="MAkelaars Logo" loading="lazy">
-              <img src="images/logo-shockwave.webp" alt="Shockwave Logo" loading="lazy">
-              <img src="images/logo-medo.webp" alt="Medo Logo" loading="lazy">
-              <img src="images/logo-elite.webp" alt="Elite Logo" loading="lazy">
-              <img src="images/logo-aldes.webp" alt="Aldes Logo" loading="lazy">
-            </div>
-          </div>
         </div>
       </div>
     </main>

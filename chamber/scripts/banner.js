@@ -1,6 +1,6 @@
 const banner = document.getElementById('banner');
 const today = new Date().getDay();
-console.log("Today", today);
+// console.log("Today", today);
 
 function createBanner() {
     const spacer = document.createElement('div');
